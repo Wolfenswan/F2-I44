@@ -48,7 +48,7 @@ f_respawnINIT = player addEventHandler ["killed", {_this execVM "init_onPlayerRe
 // F2 - OA Folk Group IDs
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-[] execVM "f\common\folk_setGroupIDs.sqf";
+f_script_setGroupIDs = [] execVM "f\common\folk_setGroupIDs.sqf";
 
 // ====================================================================================
 
