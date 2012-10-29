@@ -37,8 +37,9 @@
 //		r 		- rifleman
 //		car		- carabineer
 //		smg		- submachinegunner
-
-
+//
+//		v_tr	- truck
+//
 // ====================================================================================
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
@@ -58,6 +59,7 @@ _grenade = "I44_HandGrenade_No36M"; _smokegrenade = "I44_SmokeGrenade_ANM8";				
 _bagmedium = "I44_Bag_BABSten";		 
 _baglarge =  "I44_Bag_BABPIAT"; 
 _bagradio = "I44_Bag_BABRadio";
+_bagmedic = "I44_Bag_BMedic";
 
 // ====================================================================================
 
@@ -73,8 +75,6 @@ _HMGmount = "Tripod_Bag";																													// Assistant Heavy MG (not
 _RAT = "I44_M1A1Bazooka"; _RATmag = "I44_Rocket_60mm_M6A1_M1A1Bazooka";																											// Rifleman AT
 
 _MAT = "I44_M1A1Bazooka"; _MATmag1 = "I44_Rocket_60mm_M6A1_M1A1Bazooka"; _MATmag2 = "I44_Rocket_60mm_M6A1_M1A1Bazooka";																			// Medium AT
-
-_HAT = "Javelin"; _HATmag1 = "Javelin"; _HATmag2 = "Javelin";																				// Heavy AT Gunner
 
 _MTR = "I44_Bag_M2Mortar";																													// Mortar Gunner (note: Mortar is an assembled weapon, gunner carries weapon)
 _MTRmount = "I44_Bag_M2MortarBP";																													// Mortar Assistant Gunner (note: Mortar is an assembled weapon, assistant carries bipod/tripd)
@@ -163,7 +163,7 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];	
 		_unit addweapon _rifle;
-		{_unit addmagazine _smokegrenade;} foreach [1,2];	
+		{_unit addmagazine _smokegrenade;} foreach [1,2,3,4];
 		_unit addWeapon _medpackl;
 	};
 	
@@ -445,7 +445,18 @@ switch (_typeofUnit) do
 		_unit addweapon _smg;
 		{_unit addmagazine _grenade} foreach [1,2];
 	};
-
+	
+// CARGO: TRUCK
+	case "v_tr":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		_unit addMagazineCargoGlobal [_riflemag, 15];
+		_unit addMagazineCargoGlobal [_glriflemag, 15];
+		_unit addMagazineCargoGlobal [_carbinemag, 15];
+		_unit addMagazineCargoGlobal [_grenade, 5];
+		_unit addMagazineCargoGlobal [_smokegrenade, 5];
+	};
 
 	
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)

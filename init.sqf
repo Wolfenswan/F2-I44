@@ -198,12 +198,7 @@ player setVariable ["BIS_noCoreConversations", true];
 
 // ====================================================================================
 
-// F2 - Name Tags (Customised)
+// F2 - ORBAT notes
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-// sleep 15;
-// hint "Press T for tags.";
-// [] execVM "f\common\f_recog\recog_init.sqf";
-
-
-// ====================================================================================
+[] execVM "f\common\f_orbatNotes.sqf";

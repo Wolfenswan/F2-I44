@@ -1,4 +1,4 @@
-// F2 - Folk Assign Gear Script - Czech Republic Equipment
+// F2 - Folk Assign Gear Script - Waffen SS Equipment
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 // ====================================================================================
 
@@ -73,8 +73,6 @@ _HMGmount = "Tripod_Bag";																													// Assistant Heavy MG (not
 _RAT = "I44_PzFaust60"; _RATmag = "I44_Rocket_149mm_PzF_60";																											// Rifleman AT
 
 _MAT = "I44_RPzB54"; _MATmag1 = "I44_Rocket_88mm_RPzBGr4322_RPzB54"; _MATmag2 = "I44_Rocket_88mm_RPzBGr4322_RPzB54";																						// Medium AT
-
-_HAT = "MetisLauncher"; _HATmag1 = "AT13"; _HATmag2 = "AT13";																				// Heavy AT Gunner
 
 _MTR = "I44_Bag_GrW34";																												// Mortar Gunner (note: Mortar is an assembled weapon, gunner carries weapon)
 _MTRmount = "I44_Bag_GrW34BP";																														// Mortar Assistant Gunner (note: Mortar is an assembled weapon, assistant carries bipod/tripd)

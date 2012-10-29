@@ -1,4 +1,4 @@
-// F2 - Folk Assign Gear Script - Civilian Special Equipment
+// F2 - Folk Assign Gear Script - Wehrmacht Equipment
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 // ====================================================================================
 

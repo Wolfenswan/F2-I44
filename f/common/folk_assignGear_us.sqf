@@ -57,6 +57,7 @@ _grenade = "I44_HandGrenade_Mk2"; _smokegrenade = "I44_SmokeGrenade_ANM8";						
 _bagmedium = "I44_Bag_ABMusette";	//10 Slots
 _baglarge =  "I44_Bag_ABMusette";
 _bagradio = "I44_Bag_ARadio"; 
+_bagmedic = "I44_Bag_BMedic";
 
 // ====================================================================================
 
@@ -72,8 +73,6 @@ _HMGmount = "I44_Bag_M1919TripodM2";																													// Assistant He
 _RAT = "I44_M1A1Bazooka"; _RATmag = "I44_Rocket_60mm_M6A1_M1A1Bazooka";																											// Rifleman AT
 
 _MAT = "I44_M1A1Bazooka"; _MATmag1 = "I44_Rocket_60mm_M6A1_M1A1Bazooka"; _MATmag2 = "I44_Rocket_60mm_M6A1_M1A1Bazooka";																			// Medium AT
-
-_HAT = "Javelin"; _HATmag1 = "Javelin"; _HATmag2 = "Javelin";																				// Heavy AT Gunner
 
 _MTR = "I44_Bag_M2Mortar";																													// Mortar Gunner (note: Mortar is an assembled weapon, gunner carries weapon)
 _MTRmount = "I44_Bag_M2MortarBP";																															// Mortar Assistant Gunner (note: Mortar is an assembled weapon, assistant carries bipod/tripd)
