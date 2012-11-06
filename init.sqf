@@ -1,5 +1,4 @@
 // ====================================================================================
-// ====================================================================================
 
 // F2 - Process ParamsArray
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
@@ -31,7 +30,7 @@ f_respawnINIT = player addEventHandler ["killed", {_this execVM "init_onPlayerRe
 
 // ====================================================================================
 
-// F2 - OA Briefing
+// F2 - I44 Briefing
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 [] execVM "briefing.sqf";
@@ -45,7 +44,7 @@ f_respawnINIT = player addEventHandler ["killed", {_this execVM "init_onPlayerRe
 
 // ====================================================================================
 
-// F2 - OA Folk Group IDs
+// F2 - I44 Folk Group IDs
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 f_script_setGroupIDs = [] execVM "f\common\folk_setGroupIDs.sqf";
@@ -59,7 +58,7 @@ f_script_setGroupIDs = [] execVM "f\common\folk_setGroupIDs.sqf";
 
 // ====================================================================================
 
-// F2 - OA Folk Group Markers
+// F2 - I44 Group Markers
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 [] execVM "f\common\folk_setLocalGroupMarkers.sqf";
@@ -198,7 +197,23 @@ player setVariable ["BIS_noCoreConversations", true];
 
 // ====================================================================================
 
+// F2 - Name Tags (Customised)
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+// sleep 15;
+// hint "Press T for tags.";
+// [] execVM "f\common\f_recog\recog_init.sqf";
+
+// ====================================================================================
+
 // F2 - ORBAT notes
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 [] execVM "f\common\f_orbatNotes.sqf";
+
+// ====================================================================================
+
+// F2 - Tripwire action
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+// [[UnitName1,UnitName2],25,2,east] execVM "f\common\fa_tripwire_init.sqf";

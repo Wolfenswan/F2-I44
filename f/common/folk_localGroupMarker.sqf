@@ -134,7 +134,7 @@ if ((count (units _grp)) == 0) then
 				_mkrName setMarkerSizeLocal [0.8, 0.8];
 				_mkrName setMarkerTextLocal _mkrText;
 			};			
-// IFVs and Tanks
+// APCs and Tanks
 			case 7:
 			{
 				_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];

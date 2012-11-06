@@ -15,7 +15,6 @@ private [
 "_HMG","_HMGmount",				
 "_RAT","_RATmag",			
 "_MAT","_MATmag1","_MATmag2",
-"_HAT","_HATmag1","_HATmag2",
 "_MTR","_MTRmount",					
 "_FLM","_FLMmag","_FLMback",		
 "_SNrifle","_SNriflemag",			
@@ -37,7 +36,8 @@ private [
 _typeofUnit = toLower (_this select 0);
 _unit = _this select 1;
 _faction = toLower (faction _unit);
-_useBackpacks = 1;
+_useBackpacks = paramsArray select 0;
+_useACRE = paramsArray select 1;
 
 
 // DEBUG
@@ -47,10 +47,6 @@ _useBackpacks = 1;
 	};
 
 // ====================================================================================
-
-// GEAR: US
-// The following block of code executes only if the player is in a US slot; it 
-// automatically includes a file which contains the appropriate equipment data.
 
 // GEAR: US / Airforce
 // The following block of code executes only if the player is in a US / Airforce slot; it 
@@ -109,6 +105,17 @@ if (_faction == "i44_g_wl") then {
 if (_faction == "i44_r_f") then {
 #include "folk_assignGear_res.sqf"
 };
+
+// ====================================================================================
+
+// GEAR: ACRE
+// The following block of code executes only if the player if the ACRE parameter is set to true; it 
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_useACRE == 1) then {
+#include "folk_assignGear_acre.sqf"
+};
+
 
 // ====================================================================================
 
