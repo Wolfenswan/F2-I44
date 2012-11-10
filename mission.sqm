@@ -56,7 +56,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=204;
+		items=203;
 		class Item0
 		{
 			side="LOGIC";
@@ -675,6 +675,7 @@ class Mission
 					id=44;
 					side="WEST";
 					vehicle="I44_Man_A_Army_CO_M1Carbine";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -686,13 +687,14 @@ class Mission
 				class Item1
 				{
 					position[]={485.9585,19.390192,604.24213};
-					azimut=1.1368302;
+					azimut=1.13683;
 					id=45;
 					side="WEST";
 					vehicle="I44_Man_A_Army_Medic";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_CO_M_1";
+					text="UnitUS_CO_M";
 					init="GrpUS_CO = group this; nul = [""m"",this] call f_fnc_assignGear;";
 					description="US Army Medic";
 					synchronizations[]={125,126};
@@ -723,13 +725,14 @@ class Mission
 				class Item1
 				{
 					position[]={485.27979,15.83913,589.3432};
-					azimut=1.1368302;
+					azimut=1.13683;
 					id=47;
 					side="WEST";
 					vehicle="I44_Man_A_Army_Medic";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_DC_M_1";
+					text="UnitUS_DC_M";
 					init="GrpUS_DC = group this; nul = [""m"",this] call f_fnc_assignGear;";
 					description="US Army Medic";
 					synchronizations[]={125,126};
@@ -782,10 +785,11 @@ class Mission
 				class Item0
 				{
 					position[]={502.88135,9.8255978,552.54242};
-					azimut=1.1368302;
+					azimut=1.13683;
 					id=50;
 					side="WEST";
 					vehicle="I44_Man_A_Army_M1Garand";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -801,6 +805,7 @@ class Mission
 					id=51;
 					side="WEST";
 					vehicle="I44_Man_A_Army_M1918A2";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitUS_A1_AR";
@@ -811,10 +816,11 @@ class Mission
 				class Item2
 				{
 					position[]={507.9917,9.5295563,549.32269};
-					azimut=1.1368302;
+					azimut=1.13683;
 					id=52;
 					side="WEST";
 					vehicle="I44_Man_A_Army_M1Carbine";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUS_A1_AAR";
 					init="GrpUS_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
@@ -824,10 +830,11 @@ class Mission
 				class Item3
 				{
 					position[]={511.42529,9.5246134,549.2265};
-					azimut=1.1368302;
+					azimut=1.13683;
 					id=53;
 					side="WEST";
 					vehicle="I44_Man_A_Army_M1A1Bazooka";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUS_A1_AT";
 					init="GrpUS_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
@@ -1465,6 +1472,7 @@ class Mission
 					id=92;
 					side="WEST";
 					vehicle="I44_Man_A_Army_GunCrew_NCO_M1911A1";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -1647,6 +1655,7 @@ class Mission
 					id=102;
 					side="WEST";
 					vehicle="I44_Man_A_Army_M1Carbine";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -1720,12 +1729,13 @@ class Mission
 					id=106;
 					side="WEST";
 					vehicle="I44_Man_A_Army_Crew_M1911A1";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_IFV1_C";
-					init="GrpUS_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInCommander US_IFV1;";
-					description="US Army IFV 1 Gunner";
+					text="UnitUS_APC1_C";
+					init="GrpUS_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner US_APC1;";
+					description="US Army APC 1 Gunner";
 					synchronizations[]={125,126};
 				};
 				class Item1
@@ -1735,10 +1745,11 @@ class Mission
 					id=107;
 					side="WEST";
 					vehicle="I44_Man_A_Army_Crew_M1911A1";
+					player="PLAY CDG";
 					skill=0.5;
-					text="UnitUS_IFV1_D";
-					init="GrpUS_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver US_IFV1;";
-					description="US Army IFV 1 Gunner";
+					text="UnitUS_APC1_D";
+					init="GrpUS_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver US_APC1;";
+					description="US Army APC 1 Driver";
 					synchronizations[]={125,126};
 				};
 			};
@@ -1759,9 +1770,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_IFV2_C";
-					init="GrpUS_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner US_IFV2;";
-					description="US Army IFV 2 Gunner";
+					text="UnitUS_APC2_C";
+					init="GrpUS_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner US_APC2;";
+					description="US Army APC 2 Gunner";
 					synchronizations[]={125,126};
 				};
 				class Item1
@@ -1772,9 +1783,9 @@ class Mission
 					side="WEST";
 					vehicle="I44_Man_A_Army_Crew_M1911A1";
 					skill=0.5;
-					text="UnitUS_IFV2_D";
-					init="GrpUS_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver US_IFV2;";
-					description="US Army IFV 2 Driver";
+					text="UnitUS_APC2_D";
+					init="GrpUS_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver US_APC2;";
+					description="US Army APC 2 Driver";
 					synchronizations[]={125,126};
 				};
 			};
@@ -1795,9 +1806,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_IFV3_C";
-					init="GrpUS_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner US_IFV3;";
-					description="US Army IFV 3 Gunner";
+					text="UnitUS_APC3_C";
+					init="GrpUS_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner US_APC3;";
+					description="US Army APC 3 Gunner";
 					synchronizations[]={125,126};
 				};
 				class Item1
@@ -1808,9 +1819,9 @@ class Mission
 					side="WEST";
 					vehicle="I44_Man_A_Army_Crew_M1911A1";
 					skill=0.5;
-					text="UnitUS_IFV3_D";
-					init="GrpUS_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver US_IFV3;";
-					description="US Army IFV 3 Driver";
+					text="UnitUS_APC3_D";
+					init="GrpUS_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver US_APC3;";
+					description="US Army APC 3 Driver";
 					synchronizations[]={125,126};
 				};
 			};
@@ -2085,6 +2096,7 @@ class Mission
 					id=141;
 					side="WEST";
 					vehicle="I44_Man_B_Army_CO_StenMk5";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -2099,6 +2111,7 @@ class Mission
 					id=142;
 					side="WEST";
 					vehicle="I44_Man_B_Army_Medic";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_CO_M";
@@ -2190,6 +2203,7 @@ class Mission
 					id=147;
 					side="WEST";
 					vehicle="I44_Man_B_Army_StenMk5";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -2218,6 +2232,7 @@ class Mission
 					id=149;
 					side="WEST";
 					vehicle="I44_Man_B_Army_StenMk2";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_A1_AAR";
 					init="GrpBAF_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
@@ -2792,6 +2807,7 @@ class Mission
 					id=187;
 					side="WEST";
 					vehicle="I44_Man_B_Army_BrenMk1";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -2806,6 +2822,7 @@ class Mission
 					id=188;
 					side="WEST";
 					vehicle="I44_Man_B_Army_StenMk2";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_MMG1_AG";
 					init="GrpBAF_MMG1 = group this; nul = [""mmgag"",this] call f_fnc_assignGear;";
@@ -2826,6 +2843,7 @@ class Mission
 					id=189;
 					side="WEST";
 					vehicle="I44_Man_B_Army_GunCrew_SMLENo4Mk1";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -2840,6 +2858,7 @@ class Mission
 					id=190;
 					side="WEST";
 					vehicle="I44_Man_B_Army_GunCrew_SMLENo4Mk1";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_HMG1_AG";
 					init="GrpBAF_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
@@ -2860,6 +2879,7 @@ class Mission
 					id=191;
 					side="WEST";
 					vehicle="I44_Man_B_Army_PIAT";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -2874,6 +2894,7 @@ class Mission
 					id=192;
 					side="WEST";
 					vehicle="I44_Man_A_Army_ATCrew_M3";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_MAT1_AG";
 					init="GrpBAF_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
@@ -2894,6 +2915,7 @@ class Mission
 					id=193;
 					side="WEST";
 					vehicle="I44_Man_B_Army_GunCrew_SMLENo4Mk1";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -2908,6 +2930,7 @@ class Mission
 					id=194;
 					side="WEST";
 					vehicle="I44_Man_B_Army_GunCrew_SMLENo4Mk1";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_HAT1_AG";
 					init="GrpBAF_HAT1 = group this; nul = [""r"",this] call f_fnc_assignGear; this moveInGunner BAF_HAT1;";
@@ -2924,10 +2947,11 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={631.0929,8.0230408,262.35449};
+					position[]={630.79779,8.0230408,259.20538};
 					id=195;
 					side="WEST";
 					vehicle="I44_Man_B_Army_Engr_FlameNo2";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -2942,6 +2966,7 @@ class Mission
 					id=196;
 					side="WEST";
 					vehicle="I44_Man_B_Army_Engr_FlameNo2";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_FLM1_AG";
 					init="GrpBAF_FLM1 = group this; nul = [""flmag"",this] call f_fnc_assignGear;";
@@ -2962,6 +2987,7 @@ class Mission
 					id=197;
 					side="WEST";
 					vehicle="I44_Man_B_Army_Sniper_SMLENo4Mk1T";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -2976,6 +3002,7 @@ class Mission
 					id=198;
 					side="WEST";
 					vehicle="I44_Man_B_Army_Sniper_SMLENo4Mk1T";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_ST1_SP";
 					init="GrpBAF_ST1 = group this; nul = [""sp"",this] call f_fnc_assignGear;";
@@ -2996,6 +3023,7 @@ class Mission
 					id=199;
 					side="WEST";
 					vehicle="I44_Man_B_Army_GunCrew_SMLENo4Mk1";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -3010,6 +3038,7 @@ class Mission
 					id=200;
 					side="WEST";
 					vehicle="I44_Man_B_Army_GunCrew_SMLENo4Mk1";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_MTR1_AG";
 					init="GrpBAF_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
@@ -3030,6 +3059,7 @@ class Mission
 					id=201;
 					side="WEST";
 					vehicle="I44_Man_B_Army_Engr_GrenadeNo75";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -3044,6 +3074,7 @@ class Mission
 					id=202;
 					side="WEST";
 					vehicle="I44_Man_B_Army_Engr_GrenadeNo75";
+					player="PLAY CDG";
 					skill=0.5;
 					text="UnitBAF_ENG1_A";
 					init="GrpBAF_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
@@ -3067,9 +3098,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitBAF_IFV1_C";
-					init="GrpBAF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_IFV1;";
-					description="Royal Army IFV 1 Gunner";
+					text="UnitBAF_APC1_C";
+					init="GrpBAF_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_APC1;";
+					description="Royal Army APC 1 Gunner";
 					synchronizations[]={224,225};
 				};
 				class Item1
@@ -3079,9 +3110,9 @@ class Mission
 					side="WEST";
 					vehicle="I44_Man_B_Army_Crew_WebleyMk6";
 					skill=0.5;
-					text="UnitBAF_IFV1_D";
-					init="GrpBAF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_IFV1;";
-					description="Royal Army IFV 1 Driver";
+					text="UnitBAF_APC1_D";
+					init="GrpBAF_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_APC1;";
+					description="Royal Army APC 1 Driver";
 					synchronizations[]={224,225};
 				};
 			};
@@ -3101,9 +3132,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitBAF_IFV2_C";
-					init="GrpBAF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_IFV2;";
-					description="Royal Army IFV 2 Gunner";
+					text="UnitBAF_APC2_C";
+					init="GrpBAF_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_APC2;";
+					description="Royal Army APC 2 Gunner";
 					synchronizations[]={224,225};
 				};
 				class Item1
@@ -3113,9 +3144,9 @@ class Mission
 					side="WEST";
 					vehicle="I44_Man_B_Army_Crew_WebleyMk6";
 					skill=0.5;
-					text="UnitBAF_IFV2_D";
-					init="GrpBAF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_IFV2;";
-					description="Royal Army IFV 2 Driver";
+					text="UnitBAF_APC2_D";
+					init="GrpBAF_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_APC2;";
+					description="Royal Army APC 2 Driver";
 					synchronizations[]={224,225};
 				};
 			};
@@ -3135,9 +3166,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitBAF_IFV3_C";
-					init="GrpBAF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_IFV3;";
-					description="Royal Army IFV 3 Gunner";
+					text="UnitBAF_APC3_C";
+					init="GrpBAF_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_APC3;";
+					description="Royal Army APC 3 Gunner";
 					synchronizations[]={224,225};
 				};
 				class Item1
@@ -3147,9 +3178,9 @@ class Mission
 					side="WEST";
 					vehicle="I44_Man_B_Army_Crew_WebleyMk6";
 					skill=0.5;
-					text="UnitBAF_IFV3_D";
-					init="GrpBAF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_IFV3;";
-					description="Royal Army IFV 3 Driver";
+					text="UnitBAF_APC3_D";
+					init="GrpBAF_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_APC3;";
+					description="Royal Army APC 3 Driver";
 					synchronizations[]={224,225};
 				};
 			};
@@ -3411,6 +3442,7 @@ class Mission
 					id=226;
 					side="EAST";
 					vehicle="I44_Man_G_WH_CO_MP40";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -3516,6 +3548,7 @@ class Mission
 					id=232;
 					side="EAST";
 					vehicle="I44_Man_G_WH_MP40";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -4117,6 +4150,7 @@ class Mission
 					id=272;
 					side="EAST";
 					vehicle="I44_Man_G_WH_MG42";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -4185,6 +4219,7 @@ class Mission
 					id=276;
 					side="EAST";
 					vehicle="I44_Man_G_WH_RPzB54";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -4392,9 +4427,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitWH_IFV1_C";
-					init="GrpWH_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner Wh_IFV11;";
-					description="Heer IFV 1 Gunner";
+					text="UnitWH_APC1_C";
+					init="GrpWH_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner Wh_APC11;";
+					description="Heer APC 1 Gunner";
 					synchronizations[]={310,309};
 				};
 				class Item1
@@ -4404,9 +4439,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_Crew_P38";
 					skill=0.5;
-					text="UnitWH_IFV1_D";
-					init="GrpWH_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver WH_IFV1;";
-					description="Heer IFV 1 Driver";
+					text="UnitWH_APC1_D";
+					init="GrpWH_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver WH_APC1;";
+					description="Heer APC 1 Driver";
 					synchronizations[]={309,310};
 				};
 			};
@@ -4426,9 +4461,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitWH_IFV2_C";
-					init="GrpWH_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner WH_IFV2;";
-					description="Heer IFV 2 Gunner";
+					text="UnitWH_APC2_C";
+					init="GrpWH_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner WH_APC2;";
+					description="Heer APC 2 Gunner";
 					synchronizations[]={309,310};
 				};
 				class Item1
@@ -4438,9 +4473,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_Crew_P38";
 					skill=0.5;
-					text="UnitWH_IFV2_D";
-					init="GrpWH_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver WH_IFV2;";
-					description="Heer IFV 2 Driver";
+					text="UnitWH_APC2_D";
+					init="GrpWH_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver WH_APC2;";
+					description="Heer APC 2 Driver";
 					synchronizations[]={309,310};
 				};
 			};
@@ -4460,9 +4495,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitWH_IFV3_C";
-					init="GrpWH_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner WH_IFV3;";
-					description="Heer IFV 3 Gunner";
+					text="UnitWH_APC3_C";
+					init="GrpWH_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner WH_APC3;";
+					description="Heer APC 3 Gunner";
 					synchronizations[]={309,310};
 				};
 				class Item1
@@ -4472,9 +4507,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_Crew_P38";
 					skill=0.5;
-					text="UnitWH_IFV3_D";
-					init="GrpWH_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver WH_IFV3;";
-					description="Heer IFV 3 Driver";
+					text="UnitWH_APC3_D";
+					init="GrpWH_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver WH_APC3;";
+					description="Heer APC 3 Driver";
 					synchronizations[]={309,310};
 				};
 			};
@@ -4736,6 +4771,7 @@ class Mission
 					id=311;
 					side="EAST";
 					vehicle="I44_Man_G_SS_CO_MP40";
+					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.5;
@@ -5718,9 +5754,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitSS_IFV1_C";
-					init="GrpSS_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner SS_IFV1;";
-					description="Waffen SS IFV 1 Gunner";
+					text="UnitSS_APC1_C";
+					init="GrpSS_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner SS_APC1;";
+					description="Waffen SS APC 1 Gunner";
 					synchronizations[]={394,395};
 				};
 				class Item1
@@ -5730,9 +5766,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_Crew_P38";
 					skill=0.5;
-					text="UnitSS_IFV1_D";
-					init="GrpSS_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver SS_IFV1;";
-					description="Waffen SS IFV 1 Driver";
+					text="UnitSS_APC1_D";
+					init="GrpSS_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver SS_APC1;";
+					description="Waffen SS APC 1 Driver";
 					synchronizations[]={394,395};
 				};
 			};
@@ -5752,9 +5788,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitSS_IFV2_C";
-					init="GrpSS_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner SS_IFV2;";
-					description="Waffen SS IFV 2 Gunner";
+					text="UnitSS_APC2_C";
+					init="GrpSS_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner SS_APC2;";
+					description="Waffen SS APC 2 Gunner";
 					synchronizations[]={394,395};
 				};
 				class Item1
@@ -5764,9 +5800,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_Crew_P38";
 					skill=0.5;
-					text="UnitSS_IFV2_D";
-					init="GrpSS_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver SS_IFV2;";
-					description="Waffen SS IFV 2 Driver";
+					text="UnitSS_APC2_D";
+					init="GrpSS_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver SS_APC2;";
+					description="Waffen SS APC 2 Driver";
 					synchronizations[]={394,395};
 				};
 			};
@@ -5786,9 +5822,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitSS_IFV3_C";
-					init="GrpSS_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner SS_IFV3;";
-					description="Waffen SS IFV 3 Gunner";
+					text="UnitSS_APC3_C";
+					init="GrpSS_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner SS_APC3;";
+					description="Waffen SS APC 3 Gunner";
 					synchronizations[]={394,395};
 				};
 				class Item1
@@ -5798,9 +5834,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_Crew_P38";
 					skill=0.5;
-					text="UnitSS_IFV3_D";
-					init="GrpSS_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver SS_IFV3;";
-					description="Waffen SS IFV 3 Driver";
+					text="UnitSS_APC3_D";
+					init="GrpSS_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver SS_APC3;";
+					description="Waffen SS APC 3 Driver";
 					synchronizations[]={394,395};
 				};
 			};
@@ -7043,9 +7079,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitRF_IFV1_C";
-					init="GrpRF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner GUE_IFV1;";
-					description="French Resistance IFV 1 Gunner";
+					text="UnitRF_APC1_C";
+					init="GrpRF_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner GUE_APC1;";
+					description="French Resistance APC 1 Gunner";
 					synchronizations[]={479,480};
 				};
 				class Item1
@@ -7055,9 +7091,9 @@ class Mission
 					side="GUER";
 					vehicle="TK_GUE_Soldier_5_EP1";
 					skill=0.5;
-					text="UnitRF_IFV1_D";
-					init="GrpRF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver GUE_IFV1;";
-					description="French Resistance IFV 1 Driver";
+					text="UnitRF_APC1_D";
+					init="GrpRF_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver GUE_APC1;";
+					description="French Resistance APC 1 Driver";
 					synchronizations[]={479,480};
 				};
 			};
@@ -7077,9 +7113,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitRF_IFV2_C";
-					init="GrpRF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner GUE_IFV2;";
-					description="French Resistance IFV 2 Gunnerr";
+					text="UnitRF_APC2_C";
+					init="GrpRF_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner GUE_APC2;";
+					description="French Resistance APC 2 Gunnerr";
 					synchronizations[]={479,480};
 				};
 				class Item1
@@ -7089,9 +7125,9 @@ class Mission
 					side="GUER";
 					vehicle="TK_GUE_Soldier_5_EP1";
 					skill=0.5;
-					text="UnitRF_IFV2_D";
-					init="GrpRF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver GUE_IFV2;";
-					description="French Resistance IFV 2 Driver";
+					text="UnitRF_APC2_D";
+					init="GrpRF_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver GUE_APC2;";
+					description="French Resistance APC 2 Driver";
 					synchronizations[]={479,480};
 				};
 			};
@@ -7111,9 +7147,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitRF_IFV3_C";
-					init="GrpRF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner GUE_IFV3;";
-					description="French Resistance IFV 3 Gunner";
+					text="UnitRF_APC3_C";
+					init="GrpRF_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner GUE_APC3;";
+					description="French Resistance APC 3 Gunner";
 					synchronizations[]={479,480};
 				};
 				class Item1
@@ -7123,9 +7159,9 @@ class Mission
 					side="GUER";
 					vehicle="TK_GUE_Soldier_5_EP1";
 					skill=0.5;
-					text="UnitRF_IFV3_D";
-					init="GrpRF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver GUE_IFV3;";
-					description="French Resistance IFV 3 Driver";
+					text="UnitRF_APC3_D";
+					init="GrpRF_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver GUE_APC3;";
+					description="French Resistance APC 3 Driver";
 					synchronizations[]={479,480};
 				};
 			};
@@ -8370,9 +8406,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitFJ_IFV1_C";
-					init="GrpFJ_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner INS_IFV1;";
-					description="Fallschirmjaeger IFV 1 Gunner";
+					text="UnitFJ_APC1_C";
+					init="GrpFJ_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner INS_APC1;";
+					description="Fallschirmjaeger APC 1 Gunner";
 					synchronizations[]={573,574};
 				};
 				class Item1
@@ -8382,9 +8418,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_MP40";
 					skill=0.5;
-					text="UnitFJ_IFV1_D";
-					init="GrpFJ_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver INS_IFV1;";
-					description="Fallschirmjaeger IFV 1 Driver";
+					text="UnitFJ_APC1_D";
+					init="GrpFJ_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver INS_APC1;";
+					description="Fallschirmjaeger APC 1 Driver";
 					synchronizations[]={573,574};
 				};
 			};
@@ -8404,9 +8440,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitFJ_IFV2_C";
-					init="GrpFJ_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner INS_IFV2;";
-					description="Fallschirmjaeger IFV 2 Gunner";
+					text="UnitFJ_APC2_C";
+					init="GrpFJ_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner INS_APC2;";
+					description="Fallschirmjaeger APC 2 Gunner";
 					synchronizations[]={573,574};
 				};
 				class Item1
@@ -8416,9 +8452,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_MP40";
 					skill=0.5;
-					text="UnitFJ_IFV2_D";
-					init="GrpFJ_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver INS_IFV2;";
-					description="Fallschirmjaeger IFV 2 Driver";
+					text="UnitFJ_APC2_D";
+					init="GrpFJ_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver INS_APC2;";
+					description="Fallschirmjaeger APC 2 Driver";
 					synchronizations[]={573,574};
 				};
 			};
@@ -8438,9 +8474,9 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitFJ_IFV3_C";
-					init="GrpFJ_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner INS_IFV3;";
-					description="Fallschirmjaeger IFV 3 Gunner";
+					text="UnitFJ_APC3_C";
+					init="GrpFJ_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner INS_APC3;";
+					description="Fallschirmjaeger APC 3 Gunner";
 					synchronizations[]={573,574};
 				};
 				class Item1
@@ -8450,9 +8486,9 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_MP40";
 					skill=0.5;
-					text="UnitFJ_IFV3_D";
-					init="GrpFJ_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver INS_IFV3;";
-					description="Fallschirmjaeger IFV 3 Driver";
+					text="UnitFJ_APC3_D";
+					init="GrpFJ_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver INS_APC3;";
+					description="Fallschirmjaeger APC 3 Driver";
 					synchronizations[]={573,574};
 				};
 			};
@@ -8702,24 +8738,6 @@ class Mission
 				};
 			};
 		};
-		class Item203
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={2604.0503,9.1121464,2707.0552};
-					id=581;
-					side="EAST";
-					vehicle="I44_Man_G_WH_MP43";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.60000002;
-				};
-			};
-		};
 	};
 	class Vehicles
 	{
@@ -8741,7 +8759,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_WH";
 			skill=0.5;
-			text="Wh_IFV1";
+			text="Wh_APC1";
 		};
 		class Item2
 		{
@@ -8750,7 +8768,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_WH";
 			skill=0.5;
-			text="Wh_IFV2";
+			text="Wh_APC2";
 		};
 		class Item3
 		{
@@ -8759,7 +8777,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_WH";
 			skill=0.5;
-			text="Wh_IFV3";
+			text="Wh_APC3";
 		};
 		class Item4
 		{
@@ -8795,7 +8813,8 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_A_M3A1_Army";
 			skill=0.5;
-			text="Us_IFV1";
+			text="Us_APC1";
+			init="nul = [""v_apc"",this] call f_fnc_assignGear; ";
 		};
 		class Item8
 		{
@@ -8813,7 +8832,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_A_M3A1_Army";
 			skill=0.5;
-			text="Us_IFV2";
+			text="Us_APC2";
 		};
 		class Item10
 		{
@@ -8822,7 +8841,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_A_M3A1_Army";
 			skill=0.5;
-			text="Us_IFV3";
+			text="Us_APC3";
 			synchronizations[]={130};
 		};
 		class Item11
@@ -8853,7 +8872,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_Tank_B_Army_UC";
 			skill=0.5;
-			text="BAF_IFV1";
+			text="BAF_APC1";
 		};
 		class Item14
 		{
@@ -8887,12 +8906,12 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={556.03369,8.0230408,219.34155};
+			position[]={556.03369,8.0230408,218.44495};
 			id=139;
 			side="EMPTY";
 			vehicle="I44_Tank_B_Army_UC";
 			skill=0.5;
-			text="BAF_IFV2";
+			text="BAF_APC2";
 		};
 		class Item18
 		{
@@ -8901,7 +8920,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_Tank_B_Army_UC";
 			skill=0.5;
-			text="BAF_IFV3";
+			text="BAF_APC3";
 		};
 		class Item19
 		{
@@ -8910,7 +8929,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_SS";
 			skill=0.5;
-			text="SS_IFV3";
+			text="SS_APC3";
 		};
 		class Item20
 		{
@@ -8919,7 +8938,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_SS";
 			skill=0.5;
-			text="SS_IFV2";
+			text="SS_APC2";
 		};
 		class Item21
 		{
@@ -8928,7 +8947,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_SS";
 			skill=0.5;
-			text="SS_IFV1";
+			text="SS_APC1";
 		};
 		class Item22
 		{
@@ -8995,7 +9014,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_SS";
 			skill=0.5;
-			text="FJ_IFV1";
+			text="FJ_APC1";
 		};
 		class Item29
 		{
@@ -9004,7 +9023,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_SS";
 			skill=0.5;
-			text="FJ_IFV2";
+			text="FJ_APC2";
 		};
 		class Item30
 		{
@@ -9013,7 +9032,7 @@ class Mission
 			side="EMPTY";
 			vehicle="I44_HT_G_SdKfz251_1D_SS";
 			skill=0.5;
-			text="FJ_IFV3";
+			text="FJ_APC3";
 		};
 		class Item31
 		{
@@ -9046,7 +9065,7 @@ class Mission
 		class Item34
 		{
 			position[]={594.89215,8.0230408,520.62897};
-			id=582;
+			id=581;
 			side="EMPTY";
 			vehicle="I44_GunAT_B_QF6pdrMk4_Army";
 			leader=1;
@@ -9056,7 +9075,7 @@ class Mission
 		class Item35
 		{
 			position[]={2889.4294,8.0230408,472.74323};
-			id=583;
+			id=582;
 			side="EMPTY";
 			vehicle="I44_Tank_G_PzKpfwIV_F2_Skirt_SS";
 			skill=0.5;

@@ -51,7 +51,7 @@ _glrifle = "I44_K98k_GGrGer"; _glriflemag = "I44_5rd_792x57_Mix_K98"; _glmag1 = 
 
 _pistol = "I44_P38"; _pistolmag = "I44_8rd_9x19_Ball_P38";																						// Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
 
-_grenade = "I44_HandGrenade_StiHgr24"; _smokegrenade = "I44_G_SmokeGrenade_NbHgr39";																				// Grenades
+_grenade = "I44_HandGrenade_StiHgr24"; _smokegrenade = "I44_SmokeGrenade_NbHgr39";																				// Grenades
 
 _bagmedium = "I44_Bag_G_FSJ";																								// Backpack for assistant gunners (AAR, AMMG, AMAT, AHAT), so that they don't have to drop ammo themselves
 _baglarge =  "I44_Bag_G_FSJ";

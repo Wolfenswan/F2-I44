@@ -40,20 +40,20 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-_rifle = "I44_M1Garand"; _riflemag = "I44_8rd_762x63_Mix_M1Garand";																						// Standard Riflemen (Spotter, HMG Assistant Gunner, MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, HAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
+_rifle = "I44_M1903A3"; _riflemag = "I44_5rd_762x63_Mix_M1903";																						// Standard Riflemen (Spotter, HMG Assistant Gunner, MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, HAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 
-_carbine = "I44_M1Carbine"; _carbinemag = "I44_15rd_762x33_Mix_M1Carbine"; 																					// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
+_carbine = "I44_M1Garand"; _carbinemag = "I44_8rd_762x63_Mix_M1Garand"; 																					// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
 
 _smg = "I44_M1A1Thompson"; _smgmag = "I44_30rd_1143x23_Mix_M1A1Thompson";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
 
-_glrifle = "I44_M1Garand_M7"; _glriflemag = "I44_8rd_762x63_Mix_M1Garand"; _glmag1 = "I44_RifleGrenade_M17";_glmag2 = "I44_RifleGrenade_M9A1";_glmag3 = "I44_RifleGrenade_M1Mk2";_glflarewhite="I44_RifleGrenade_SignalM17A1";														// Rifle with GL and HE grenades (CO, DC, FTLs)
+_glrifle = "I44_M1903A3_M1"; _glriflemag = "I44_5rd_762x63_Mix_M1903"; _glmag1 = "I44_RifleGrenade_M17";_glmag2 = "I44_RifleGrenade_M9A1";_glmag3 = "I44_RifleGrenade_M1Mk2";_glflarewhite="I44_RifleGrenade_SignalM17A1";														// Rifle with GL and HE grenades (CO, DC, FTLs)
 
 _pistol = "I44_M1911A1"; _pistolmag = "I44_7rd_1143x23_Ball_M1911";																								// Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
 
 _grenade = "I44_HandGrenade_Mk2"; _smokegrenade = "I44_SmokeGrenade_ANM8";																				// Grenades
 
-_bagmedium = "I44_Bag_ABMusette";	//10 Slots
-_baglarge =  "I44_Bag_ABMusette";
+_bagmedium = "I44_Bag_ABNCO";	  //10 Slots
+_baglarge =  "I44_Bag_ABMusette"; //10 Slots
 _bagradio = "I44_Bag_ARadio"; 
 _bagmedic = "I44_Bag_ABMedic";
 
@@ -133,9 +133,9 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 4];
+			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
-			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
 		};
 	};
   
@@ -152,19 +152,22 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 4];
+			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
-			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
 		};
 	};  
 
 // LOADOUT: MEDIC
 	case "m":
 	{
-		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5];	
-		_unit addweapon _carbine;
-		{_unit addmagazine _smokegrenade;} foreach [1,2,3];
+		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7];	
+		_unit addweapon _rifle;
+		{_unit addmagazine _smokegrenade;} foreach [1,2,3,4,5];
 		_unit addWeapon _medpackl;
+		if (_useBackpacks==1) then {
+			_unit addBackpack _bagmedic;
+		};
 	};
 
 // LOADOUT: FIRE TEAM LEADER
@@ -180,49 +183,56 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 4];
+			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
-			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
 		};
 	};	
 
 // LOADOUT: RADIO OPERATOR
 	case "ro":
 	{
-		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8];	
+		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8,9,10];	
 		_unit addweapon _rifle;
-		{_unit addmagazine _grenade;} foreach [1,2];
+		{_unit addmagazine _grenade;} foreach [1];
+		{_unit addmagazine _smokegrenade;} foreach [1];
+		if (_useBackpacks==1) then {
 		_unit addBackpack _bagradio;
+		},
 	};
 
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
-		{_unit addmagazine _ARmag} foreach [1,2,3,4,5];
+		{_unit addmagazine _ARmag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _AR;
-		{_unit addmagazine _grenade} foreach [1];
+		{_unit addmagazine _grenade} foreach [1,2,3];
 		{_unit addmagazine _smokegrenade;} foreach [1];
-		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
 		_unit addweapon _pistol;
+		{_unit addmagazine _pistolmag} foreach [1,2,3,4,5,6];
+		if (_useBackpacks==1) then {
+			_unit addBackpack _bagmedium;
+			clearMagazineCargoGlobal (unitBackpack _unit);
+			(unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 6];
+			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 4];
+		};
 	};	
 	
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
-		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];
+		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7];
 		_unit addweapon _rifle;		
-		{_unit addmagazine _grenade} foreach [1];
+		{_unit addmagazine _grenade} foreach [1,2];
 		{_unit addmagazine _smokegrenade;} foreach [1];
 			// Put ammo in backpack. If not OA unit, then should add directly to inv of unit instead.
 		if (_useBackpacks==1) then {
-			{_unit addmagazine _riflemag} foreach [1,2];
-			{_unit addmagazine _grenade} foreach [1];
-			{_unit addmagazine _smokegrenade;} foreach [1];
+			{_unit addmagazine _grenade} foreach [1,2];
 			_unit addBackpack _baglarge;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_RATmag, 1];
-			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_ARmag, 4];
+			(unitBackpack _unit) addMagazineCargoGlobal [_RATmag, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 		} else {
 			{_unit addmagazine _ARmag} foreach [1,2];
 		};
@@ -256,7 +266,7 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 4];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 6];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
 		};
@@ -267,27 +277,25 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _MMGmag} foreach [1,2,3,4,5];
 		_unit addweapon _MMG;	
-		{_unit addmagazine _grenade} foreach [1];	
-		{_unit addmagazine _pistolmag} foreach [1,2,3,4,5,6];
+		{_unit addmagazine _grenade} foreach [1,2];
 		_unit addweapon _pistol;
+		{_unit addmagazine _pistolmag} foreach [1,2,3,4,5,6];
 	};				
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER	
 	case "mmgag":
 	{
-		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];
+		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _rifle;
 		_unit addweapon "Binocular";
 		{_unit addmagazine _grenade} foreach [1,2];
 		if (_useBackpacks==1) then {
-			{_unit addmagazine _carbinemag} foreach [1,2];
+			{_unit addmagazine _rifleemag} foreach [1,2];
 			{_unit addmagazine _grenade} foreach [1];
 			{_unit addmagazine _smokegrenade;} foreach [1];
 			_unit addBackpack _baglarge;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_MMGmag, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_MMGmag, 5];
 		} else {
 			{_unit addmagazine _MMGmag} foreach [1,2];
 		};				
@@ -319,8 +327,8 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM AT GUNNER
 	case "matg":
 	{
-		{_unit addmagazine _carbinemag} foreach [1,2,3];
-		_unit addweapon _carbine;
+		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];
+		_unit addweapon _rifle;
 		{_unit addmagazine _MATmag1} foreach [1,2];
 		{_unit addmagazine _MATmag2} foreach [1];
 		_unit addweapon _MAT;			
@@ -342,6 +350,7 @@ switch (_typeofUnit) do
 			clearMagazineCargoGlobal (unitBackpack _unit);
 			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
 		} else {
 			{_unit addmagazine _MATmag1} foreach [1];
 			{_unit addmagazine _MATmag2} foreach [1];
@@ -393,15 +402,14 @@ switch (_typeofUnit) do
 // LOADOUT: GROUND VEHICLE CREW
 	case "c":
 	{
-		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
+		{_unit addmagazine _pistolmag} foreach [1,2,3,4,5,6];
 		_unit addweapon _pistol;
-		{_unit addmagazine _smokegrenade} foreach [1];
 	};
 
 // LOADOUT: GROUND VEHICLE CREW COMMANDER
 	case "cco":
 	{
-		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
+		{_unit addmagazine _pistolmag} foreach [1,2,3,4,5,6];
 		_unit addweapon _pistol;
 		_unit addweapon "Binocular";
 		{_unit addmagazine _smokegrenade} foreach [1];
@@ -410,23 +418,23 @@ switch (_typeofUnit) do
 // LOADOUT: AIR VEHICLE PILOTS
 	case "p":
 	{
-		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
+		{_unit addmagazine _pistolmag} foreach [1,2,3,4,5,6];
 		_unit addweapon _pistol;
-		{_unit addmagazine _smokegrenade} foreach [1,2];					
+		{_unit addmagazine _smokegrenade} foreach [1];					
 	};			
 
 // LOADOUT: ENGINEER
 	case "eng":
 	{
-		{_unit addmagazine _smgmag} foreach [1,2,3,4,5,6];
+		{_unit addmagazine _smgmag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _smg;
 		{_unit addmagazine _satchel} foreach [1,2];
 		{_unit addmagazine _mine} foreach [1,2];
 		if (_useBackpacks==1) then {
 			_unit addBackpack _baglarge;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_satchel, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_mine, 1];	
+			(unitBackpack _unit) addMagazineCargoGlobal [_satchel, 3];
+			(unitBackpack _unit) addMagazineCargoGlobal [_mine, 3];	
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
 			(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 2];
 		}; 	
@@ -437,14 +445,14 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _rifle;
-		{_unit addmagazine _grenade} foreach [1,2];
-		{_unit addmagazine _smokegrenade;} foreach [1,2];
+		{_unit addmagazine _grenade} foreach [1,2,3];
+		{_unit addmagazine _smokegrenade;} foreach [1];
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 4];
-			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 6];
+			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
 		};
 	};
 
@@ -453,14 +461,14 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _carbine;
-		{_unit addmagazine _grenade} foreach [1,2];
-		{_unit addmagazine _smokegrenade;} foreach [1,2];
+		{_unit addmagazine _grenade} foreach [1,2,3];
+		{_unit addmagazine _smokegrenade;} foreach [1];
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 4];
-			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 6];
+			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
 		};
 	};
 
@@ -469,14 +477,14 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _smgmag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _smg;
-		{_unit addmagazine _grenade} foreach [1,2];
-		{_unit addmagazine _smokegrenade;} foreach [1,2];
+		{_unit addmagazine _grenade} foreach [1,2,3];
+		{_unit addmagazine _smokegrenade;} foreach [1];
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 4];
-			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 6];
+			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
 		};
 	};
 
@@ -485,15 +493,15 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _glriflemag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _glrifle;
-		{_unit addmagazine _glmag} foreach [1,2,3,4];
-		{_unit addmagazine _glsmokewhite} foreach [1,2,3,4];
-		{_unit addmagazine _grenade} foreach [1,2];
-		{_unit addmagazine _smokegrenade;} foreach [1,2];
+		{_unit addmagazine _glmag} foreach [1,2,3,4,5,6];
+		{_unit addmagazine _glsmokewhite} foreach [1,2];
+		{_unit addmagazine _grenade} foreach [1,2,3,4];
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
+			(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite, 1];
 			(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];
 		};
 	};
@@ -534,7 +542,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glsmokewhite, 12];
 	};
 	
-// CARGO: APC/APC
+// CARGO: APC
 	case "v_apc":
 	{
 		clearWeaponCargoGlobal _unit;
