@@ -49,13 +49,10 @@ _pistol = "I44_P08"; _pistolmag = "I44_8rd_9x19_Ball_P08";																						
 
 _grenade = "I44_HandGrenade_StiHgr24"; _smokegrenade = "I44_SmokeGrenade_NbHgr39";																					// Grenades
 
-_bagmedium = "TK_Assault_Pack_EP1";		// 8+ slots																							// Backpack for assistant gunners (AAR, AMMG, AMAT, AHAT), so that they don't have to drop ammo themselves
-_baglarge =  "TK_ALICE_Pack_EP1"; 		// 12+ slots
-		//  6 Slots: "CZ_Vestpouch_EP1"
-		//  8 Slots: "US_Assault_Pack_EP1", "US_Patrol_Pack_EP1", "TK_Assault_Pack_EP1", "TK_RPG_Backpack_EP1"
-		// 12 Slots: "US_Backpack_EP1", "TK_ALICE_Pack_EP1",
-		// 13 Slots: "BAF_AssaultPack_RifleAmmo"
-		// 14 Slots: "DE_Backpack_Specops_EP1", "CZ_Backpack_EP1"
+_bagmedium = "I44_Bag_G_FSJ";																								// Backpack for assistant gunners (AAR, AMMG, AMAT, AHAT), so that they don't have to drop ammo themselves
+_baglarge =  "I44_Bag_G_FSJ";
+_bagradio = "I44_Bag_G_FSJ_Radio";
+_bagmedic = "I44_Bag_G_FSJ_Medic";
 
 // ====================================================================================
 

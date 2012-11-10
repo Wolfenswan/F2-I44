@@ -55,6 +55,7 @@ _grenade = "I44_HandGrenade_Mk2"; _smokegrenade = "I44_SmokeGrenade_ANM8";						
 _bagmedium = "I44_Bag_ABMusette";	//10 Slots
 _baglarge =  "I44_Bag_ABMusette";
 _bagradio = "I44_Bag_ARadio"; 
+_bagmedic = "I44_Bag_ABMedic";
 
 // ====================================================================================
 

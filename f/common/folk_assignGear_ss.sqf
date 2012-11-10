@@ -56,6 +56,7 @@ _grenade = "I44_HandGrenade_StiHgr24"; _smokegrenade = "I44_G_SmokeGrenade_NbHgr
 _bagmedium = "I44_Bag_G_FSJ";																								// Backpack for assistant gunners (AAR, AMMG, AMAT, AHAT), so that they don't have to drop ammo themselves
 _baglarge =  "I44_Bag_G_FSJ";
 _bagradio = "I44_Bag_G_FSJ_Radio";
+_bagmedic = "I44_Bag_G_FSJ_Medic";
 
 // ====================================================================================
 

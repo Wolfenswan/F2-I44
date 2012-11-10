@@ -21,6 +21,10 @@ private ["_unitfaction","_unitside"];
 
 _unitfaction = toLower(faction player);
 
+// If the group leader's unit is of a different faction than the player, the markers for the group leader's faction will be displayed.
+
+if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction = toLower (faction (leader group player))};
+
 // DEBUG
 	if (f_var_debugMode == 1) then
 	{
@@ -29,7 +33,10 @@ _unitfaction = toLower(faction player);
 
 // ====================================================================================
 
-//US Army and Airforce
+// BRIEFING: US Army and Airforce
+// The following block of code executes only if the player is in a US slot; it 
+// automatically includes a file which contains the appropriate briefing data.
+
 if ((_unitfaction == "i44_a_army")||(_unitfaction == "i44_a_army_winter")||(_unitfaction == "i44_a_aaf")) exitwith {
 
 #include "f\common\f_briefing_us.sqf"
@@ -42,7 +49,9 @@ if ((_unitfaction == "i44_a_army")||(_unitfaction == "i44_a_army_winter")||(_uni
 };
 
 
-//British Army and Royal Airforce
+// BRIEFING: British Army and Royal Airforce
+// The following block of code executes only if the player is in a British slot; it 
+// automatically includes a file which contains the appropriate briefing data.
 
 if ((_unitfaction == "i44_b_army")||(_unitfaction == "i44_b_army_winter")||(_unitfaction == "i44_b_aaf")) exitwith {
 
@@ -55,7 +64,9 @@ if ((_unitfaction == "i44_b_army")||(_unitfaction == "i44_b_army_winter")||(_uni
 	};
 };
 
-// Wehrmacht
+// BRIEFING: WEHRMACHT
+// The following block of code executes only if the player is in a Wehrmacht slot; it 
+// automatically includes a file which contains the appropriate briefing data.
 
 if ((_unitfaction == "I44_G_WH")||(_unitfaction == "I44_G_WH_Winter")) exitwith {
 
@@ -68,7 +79,9 @@ if ((_unitfaction == "I44_G_WH")||(_unitfaction == "I44_G_WH_Winter")) exitwith 
 	};
 };
 
-// Waffen SS
+// BRIEFING: WAFFEN SS
+// The following block of code executes only if the player is in a Waffen SS slot; it 
+// automatically includes a file which contains the appropriate briefing data.
 
 if ((_unitfaction == "I44_G_SS")||(_unitfaction == "I44_G_SS_Winter")) exitwith {
 
@@ -81,7 +94,9 @@ if ((_unitfaction == "I44_G_SS")||(_unitfaction == "I44_G_SS_Winter")) exitwith 
 	};
 };
 
-//Luftwaffe and Fallschirmjaeger
+// BRIEFING: LUFTWAFFE AND FALLSCHIRMJAEGER
+// The following block of code executes only if the player is in a Luftwaffe slot; it 
+// automatically includes a file which contains the appropriate briefing data.
 
 if (_unitfaction == "I44_G_WL") exitwith {
 
@@ -94,7 +109,9 @@ if (_unitfaction == "I44_G_WL") exitwith {
 	};
 };
 
-// French Resistance
+// BRIEFING: FRENCH RESISTANCE
+// The following block of code executes only if the player is in a French Resistance slot; it 
+// automatically includes a file which contains the appropriate briefing data.
 
 if (_unitfaction == "I44_R_F") exitwith {
 
