@@ -20,7 +20,7 @@ It uses all features mentioned on the wiki EXCLUDING:
 USAGE
 =====
 
-0. Copy the folger f2_v2-6-2_i44 into Documents/Arma 2 Other Profiles/*Your Name*/MPMissions
+0. Copy the folder f2_v2-6-2_i44 into Documents/Arma 2 Other Profiles/*Your Name*/MPMissions
 
 1. In the editor create and save a new mission on the map of your choosing.
 

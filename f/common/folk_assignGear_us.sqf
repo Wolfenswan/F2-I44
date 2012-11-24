@@ -46,7 +46,11 @@ _carbine = "I44_M1Garand"; _carbinemag = "I44_8rd_762x63_Mix_M1Garand"; 								
 
 _smg = "I44_M1A1Thompson"; _smgmag = "I44_30rd_1143x23_Mix_M1A1Thompson";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
 
-_glrifle = "I44_M1903A3_M1"; _glriflemag = "I44_5rd_762x63_Mix_M1903"; _glmag1 = "I44_RifleGrenade_M17";_glmag2 = "I44_RifleGrenade_M9A1";_glmag3 = "I44_RifleGrenade_M1Mk2";_glflarewhite="I44_RifleGrenade_SignalM17A1";														// Rifle with GL and HE grenades (CO, DC, FTLs)
+//_glrifle = "I44_M1903A3_M1"; _glriflemag = "I44_5rd_762x63_Mix_M1903"; 																				// Rifle with GL and HE grenades
+//_glmag1 = "I44_RifleGrenade_M17_M1903";_glmag2 = "I44_RifleGrenade_M9A1_M1903";_glmag3 = "I44_RifleGrenade_M1Mk2_M1903";_glflarewhite="I44_RifleGrenade_SignalM17A1_M1903";	
+
+_glrifle = "I44_M1Garand_M7"; _glriflemag = "I44_8rd_762x63_Mix_M1Garand"; 																		// Semi-automatic variant
+_glmag1 = "I44_RifleGrenade_M17";_glmag2 = "I44_RifleGrenade_M9A1";_glmag3 = "I44_RifleGrenade_M1Mk2";_glflarewhite="I44_RifleGrenade_SignalM17A1";	
 
 _pistol = "I44_M1911A1"; _pistolmag = "I44_7rd_1143x23_Ball_M1911";																								// Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
 
@@ -491,18 +495,18 @@ switch (_typeofUnit) do
 // LOADOUT: GRENADIER
 	case "gren":
 	{
-		{_unit addmagazine _glriflemag} foreach [1,2,3,4,5,6,7,8];
+		{_unit addmagazine _glriflemag} foreach [1,2,3,4,5,6,7];
 		_unit addweapon _glrifle;
-		{_unit addmagazine _glmag} foreach [1,2,3,4,5,6];
-		{_unit addmagazine _glsmokewhite} foreach [1,2];
-		{_unit addmagazine _grenade} foreach [1,2,3,4];
+		{_unit addmagazine _glmag1} foreach [1,2,3];
+		{_unit addmagazine _glmag2} foreach [1,2];
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 5];
+			(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 			(unitBackpack _unit) addMagazineCargoGlobal [_glflarewhite, 1];
-			(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_glmag1, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_glmag2, 1];
 		};
 	};
 
@@ -520,8 +524,8 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
-		_unit addMagazineCargoGlobal [_glmag, 4];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
+		_unit addMagazineCargoGlobal [_glmag1, 4];
+		_unit addMagazineCargoGlobal [_glmag2, 2];
 	};	
 	
 // CARGO: TRUCK
@@ -538,8 +542,8 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 12];
 		_unit addMagazineCargoGlobal [_smokegrenade, 12];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 4];
-		_unit addMagazineCargoGlobal [_glmag, 12];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 12];
+		_unit addMagazineCargoGlobal [_glmag1, 12];
+		_unit addMagazineCargoGlobal [_glmag2, 6];
 	};
 	
 // CARGO: APC
@@ -556,8 +560,8 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
-		_unit addMagazineCargoGlobal [_glmag, 8];
-		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
+		_unit addMagazineCargoGlobal [_glmag1, 8];
+		_unit addMagazineCargoGlobal [_glmag2, 4];
 	};
 	
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)

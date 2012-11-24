@@ -21,8 +21,7 @@ private ["_unitfaction","_unitside"];
 
 _unitfaction = toLower(faction player);
 
-// If the group leader's unit is of a different faction than the player, the markers for the group leader's faction will be displayed.
-
+// If the group leader's unit is of a different faction than the player, the briefing for the group leader's faction will be displayed.
 if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction = toLower (faction (leader group player))};
 
 // DEBUG

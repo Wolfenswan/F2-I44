@@ -36,6 +36,10 @@ private [
 _typeofUnit = toLower (_this select 0);
 _unit = _this select 1;
 _faction = toLower (faction _unit);
+
+// If the group leader's unit is of a different faction than the player, the loadout for the group leader's faction will be assigned.
+if ((_unit isKindOF "CAManBase")&&(_faction != toLower (faction (leader group _unit)))) then {_faction = toLower (faction (leader group _unit))};
+
 _useBackpacks = paramsArray select 0;
 _useACRE = paramsArray select 1;
 
