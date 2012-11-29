@@ -43,9 +43,10 @@
 
 _rifle = "I44_LeeEnfieldNo4Mk1"; _riflemag = "I44_10rd_77x56R_Ball_LeeEnfield";																			// Standard Riflemen (Spotter, HMG Assistant Gunner, MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, HAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 
-_carbine = "I44_M1Garand"; _carbinemag = "I44_8rd_762x63_Mix_M1Garand";  	 																		// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
+_carbine = "I44_M1Carbine"; _carbinemag = "I44_15rd_762x33_Mix_M1Carbine";  	 																		// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
 
 _smg = "I44_StenMk5"; _smgmag = "I44_32rd_9x19_Ball_Sten";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
+_smg2 = "I44_M1A1Thompson"; _smg2mag = "I44_30rd_1143x23_Mix_M1A1Thompson";																									// Second Submachine Gun for CO, DC, SL
 
 _glrifle = "I44_M1903A3_M1"; _glriflemag = "I44_5rd_762x63_Mix_M1903";																				// Rifle with GL and HE grenades
 _glmag1 = "I44_RifleGrenade_M17_M1903";_glmag2 = "I44_RifleGrenade_M9A1_M1903";_glmag3 = "I44_RifleGrenade_M1Mk2_M1903";_glflarewhite="I44_RifleGrenade_SignalM17A1_M1903";	
@@ -127,8 +128,8 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5,6,7,8];	//_COriflemag
-		_unit addweapon _carbine;									//_COrifle
+		{_unit addmagazine _smg2mag} foreach [1,2,3,4,5,6,7,8];
+		_unit addweapon _smg2;									
 		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
 		_unit addweapon _pistol;		
 		{_unit addmagazine _grenade} foreach [1,2];
@@ -137,7 +138,7 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smg2mag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
 		};
@@ -146,8 +147,8 @@ switch (_typeofUnit) do
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5,6,7,8];	
-		_unit addweapon _carbine;									
+		{_unit addmagazine _smg2mag} foreach [1,2,3,4,5,6,7,8];
+		_unit addweapon _smg2;									
 		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
 		_unit addweapon _pistol;		
 		{_unit addmagazine _grenade} foreach [1,2];
@@ -156,7 +157,7 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smg2mag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
 		};
@@ -389,8 +390,10 @@ switch (_typeofUnit) do
 // LOADOUT: SNIPER
 	case "sn":
 	{
-		{_unit addmagazine _SNriflemag} foreach [1,2,3,4];
+		{_unit addmagazine _SNriflemag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _SNrifle;
+		{_unit addmagazine _grenade} foreach [1,2];
+		{_unit addmagazine _smokegrenade;} foreach [1,2];
 		_unit addweapon "Binocular";
 		{_unit addmagazine _pistolmag} foreach [1,2,3,4,5,6];
 		_unit addweapon _pistol;
@@ -399,10 +402,19 @@ switch (_typeofUnit) do
 // LOADOUT: SPOTTER
 	case "sp":
 	{
-		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];
+		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _rifle;
-		_unit addweapon "Binocular";	
-	};			
+		_unit addweapon "Binocular";
+		{_unit addmagazine _grenade} foreach [1,2];
+		{_unit addmagazine _smokegrenade;} foreach [1,2];
+		if (_useBackpacks==1) then {
+			_unit addBackpack _baglarge;
+			clearMagazineCargoGlobal (unitBackpack _unit);
+			(unitBackpack _unit) addMagazineCargoGlobal [__SNriflemag, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 4];
+		};
+	};					
 	
 // LOADOUT: GROUND VEHICLE CREW
 	case "c":

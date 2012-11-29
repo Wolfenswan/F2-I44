@@ -22,7 +22,7 @@
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
 *** Insert mission credits here. ***
-<br/><br/><br/>
+<br/><br/>
 Made with F2 (http://www.ferstaberinde.com/f2/en/)
 "]];
 
@@ -46,15 +46,15 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 COMMANDER'S INTENT
 <br/>
 *** Insert very short summary of plan here. ***
-<br/><br/><br/>
+<br/><br/>
 MOVEMENT PLAN
 <br/>
 *** Insert movement instructions here. ***
-<br/><br/><br/>
+<br/><br/>
 FIRE SUPPORT PLAN
 <br/>
 *** Insert fire support instructions here. ***
-<br/><br/><br/>
+<br/><br/>
 SPECIAL TASKS
 <br/>
 *** Insert instructions for specific units here. ***
@@ -78,15 +78,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
 *** Insert general information about the situation here.***
-<br/><br/><br/>
+<br/><br/>
 ENEMY FORCES
 <br/>
 *** Insert information about enemy forces here.***
-<br/><br/><br/>
+<br/><br/>
 FRIENDLY FORCES
 <br/>
 *** Insert information about friendly forces here.***
-<br/><br/><br/>
+<br/><br/>
 "]];
 
 // ====================================================================================

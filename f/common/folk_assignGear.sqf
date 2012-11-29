@@ -22,7 +22,7 @@ private [
 "_grenade","_smokegrenade",								
 "_rifle","_riflemag",									
 "_carbine","_carbinemag",								
-"_smg","_smgmag",										
+"_smg","_smgmag","_smg2","_smg2mag",										
 "_bagmedium","_baglarge","_bagradio",
 "_mine","_satchel","_satchel2","_bayonet","_shovel","_medpacks","_medpackl"
 ];

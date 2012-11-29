@@ -373,8 +373,10 @@ switch (_typeofUnit) do
 // LOADOUT: SNIPER
 	case "sn":
 	{
-		{_unit addmagazine _SNriflemag} foreach [1,2,3,4];
+		{_unit addmagazine _SNriflemag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _SNrifle;
+		{_unit addmagazine _grenade} foreach [1,2];
+		{_unit addmagazine _smokegrenade;} foreach [1,2];
 		_unit addweapon "Binocular";
 		{_unit addmagazine _pistolmag} foreach [1,2,3,4,5,6];
 		_unit addweapon _pistol;
@@ -383,10 +385,19 @@ switch (_typeofUnit) do
 // LOADOUT: SPOTTER
 	case "sp":
 	{
-		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];
+		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _rifle;
-		_unit addweapon "Binocular";	
-	};			
+		_unit addweapon "Binocular";
+		{_unit addmagazine _grenade} foreach [1,2];
+		{_unit addmagazine _smokegrenade;} foreach [1,2];
+		if (_useBackpacks==1) then {
+			_unit addBackpack _baglarge;
+			clearMagazineCargoGlobal (unitBackpack _unit);
+			(unitBackpack _unit) addMagazineCargoGlobal [__SNriflemag, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 4];
+		};
+	};					
 	
 // LOADOUT: GROUND VEHICLE CREW
 	case "c":

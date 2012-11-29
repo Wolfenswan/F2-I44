@@ -369,7 +369,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitUS_ASL_SL";
-					init="GrpUS_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpUS_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="US Army Alpha Squad Leader";
 					synchronizations[]={99,100};
 				};
@@ -394,10 +394,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
-					position[]={502.88135,9.8255978,552.54242};
+					position[]={503.17038,9.6688709,551.01715};
 					azimut=1.13683;
 					id=24;
 					side="WEST";
@@ -417,13 +417,12 @@ class Mission
 					azimut=1.13683;
 					id=25;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1918A2";
+					vehicle="I44_Man_A_Army_M1A1Thompson";
 					player="PLAY CDG";
-					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_A1_AR";
-					init="GrpUS_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 1 Automatic Rifleman";
+					text="UnitUS_A1_SMG1";
+					init="GrpUS_A1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="US Army Alpha 1 SMG";
 					synchronizations[]={99,100};
 				};
 				class Item2
@@ -432,26 +431,12 @@ class Mission
 					azimut=1.13683;
 					id=26;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1Garand";
+					vehicle="I44_Man_A_Army_M1A1Thompson";
 					player="PLAY CDG";
 					skill=0.5;
-					text="UnitUS_A1_AAR";
-					init="GrpUS_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 1 Assistant Automatic Rifleman";
-					synchronizations[]={99,100};
-				};
-				class Item3
-				{
-					position[]={511.42529,9.5246134,549.2265};
-					azimut=1.13683;
-					id=27;
-					side="WEST";
-					vehicle="I44_Man_A_Army_M1A1Bazooka";
-					player="PLAY CDG";
-					skill=0.5;
-					text="UnitUS_A1_AT";
-					init="GrpUS_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 1 Rifleman (AT)";
+					text="UnitUS_A1_SMG2";
+					init="GrpUS_A1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="US Army Alpha 1 SMG";
 					synchronizations[]={99,100};
 				};
 			};
@@ -461,7 +446,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={503.25146,8.4240465,527.80511};
@@ -484,13 +469,13 @@ class Mission
 					azimut=1.13683;
 					id=29;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1918A2";
+					vehicle="I44_Man_A_Army_M1Garand_M7";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_A2_AR";
-					init="GrpUS_A2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 2 Automatic Rifleman";
+					text="UnitUS_A2_GREN";
+					init="GrpUS_A2 = group this; nul = [""gren"",this] call f_fnc_assignGear;";
+					description="US Army Alpha 2 Grenadier";
 					synchronizations[]={99,100};
 				};
 				class Item2
@@ -499,12 +484,12 @@ class Mission
 					azimut=1.13683;
 					id=30;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1Garand";
+					vehicle="I44_Man_A_Army_M1Carbine";
 					player="PLAY CDG";
 					skill=0.5;
-					text="UnitUS_A2_AAR";
-					init="GrpUS_A2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 2 Assistant Automatic Rifleman";
+					text="UnitUS_A2_CAR";
+					init="GrpUS_A2 = group this; nul = [""car"",this] call f_fnc_assignGear;";
+					description="US Army Alpha 2 M1 Carbine";
 					synchronizations[]={99,100};
 				};
 				class Item3
@@ -513,12 +498,26 @@ class Mission
 					azimut=1.13683;
 					id=31;
 					side="WEST";
+					vehicle="I44_Man_A_Army_Sniper_M1903A4";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUS_A2_M";
+					init="GrpUS_A2 = group this; nul = [""sn"",this] call f_fnc_assignGear;";
+					description="US Army Alpha 2 Marksman";
+					synchronizations[]={99,100};
+				};
+				class Item4
+				{
+					position[]={503.61877,8.2696934,524.80084};
+					azimut=1.13683;
+					id=27;
+					side="WEST";
 					vehicle="I44_Man_A_Army_M1A1Bazooka";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUS_A2_AT";
 					init="GrpUS_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 2 Rifleman (AT)";
+					description="US Army Alpha 1 Rifleman (AT)";
 					synchronizations[]={99,100};
 				};
 			};
@@ -531,7 +530,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={502.86963,8.0230408,505.04144};
+					position[]={502.86963,8.0230408,504.98224};
 					azimut=1.13683;
 					id=32;
 					side="WEST";
@@ -547,7 +546,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={505.23291,8.0230408,502.01996};
+					position[]={503.07007,8.0230408,502.61261};
 					azimut=1.13683;
 					id=33;
 					side="WEST";
@@ -557,12 +556,12 @@ class Mission
 					skill=0.5;
 					text="UnitUS_A3_AR";
 					init="GrpUS_A3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 3 Automatic Rifleman";
+					description="US Army Alpha 3 BAR Gunner";
 					synchronizations[]={99,100};
 				};
 				class Item2
 				{
-					position[]={507.98193,8.0230408,501.82318};
+					position[]={505.0192,8.0230408,502.74207};
 					azimut=1.13683;
 					id=34;
 					side="WEST";
@@ -571,21 +570,21 @@ class Mission
 					skill=0.5;
 					text="UnitUS_A3_AAR";
 					init="GrpUS_A3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 3 Assistant Automatic Rifleman";
+					description="US Army Alpha 3 BAR Assistant";
 					synchronizations[]={99,100};
 				};
 				class Item3
 				{
-					position[]={511.41553,8.0230408,501.72504};
+					position[]={507.1788,8.0230408,502.58472};
 					azimut=1.13683;
 					id=35;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1A1Bazooka";
+					vehicle="I44_Man_A_Army_M1Carbine";
 					player="PLAY CDG";
 					skill=0.5;
-					text="UnitUS_A3_AT";
-					init="GrpUS_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="US Army Alpha 3 Rifleman (AT)";
+					text="UnitUS_A3_CAR";
+					init="GrpUS_A3 = group this; nul = [""car"",this] call f_fnc_assignGear;";
+					description="US Army Alpha 3 M1 Carbine";
 					synchronizations[]={99,100};
 				};
 			};
@@ -607,7 +606,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitUS_BSL_SL";
-					init="GrpUS_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpUS_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="US Army Bravo Squad Leader";
 					synchronizations[]={99,100};
 				};
@@ -632,7 +631,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={537.04443,9.7346363,551.65717};
@@ -655,13 +654,13 @@ class Mission
 					azimut=1.13683;
 					id=39;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1918A2";
+					vehicle="I44_Man_A_Army_M1A1Thompson";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_B1_AR";
-					init="GrpUS_B1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Bravo 1 Automatic Rifleman";
+					text="UnitUS_B1_SMG1";
+					init="GrpUS_B1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="US Army Bravo 1 SMG";
 					synchronizations[]={99,100};
 				};
 				class Item2
@@ -670,26 +669,12 @@ class Mission
 					azimut=1.13683;
 					id=40;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1Garand";
+					vehicle="I44_Man_A_Army_M1A1Thompson";
 					player="PLAY CDG";
 					skill=0.5;
-					text="UnitUS_B1_AAR";
-					init="GrpUS_B1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Bravo 1 Assistant Automatic Rifleman";
-					synchronizations[]={99,100};
-				};
-				class Item3
-				{
-					position[]={545.58838,9.4791584,548.34174};
-					azimut=1.13683;
-					id=41;
-					side="WEST";
-					vehicle="I44_Man_A_Army_M1A1Bazooka";
-					player="PLAY CDG";
-					skill=0.5;
-					text="UnitUS_B1_AT";
-					init="GrpUS_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="US Army Bravo 1 Rifleman (AT)";
+					text="UnitUS_B1_SMG2";
+					init="GrpUS_B1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="US Army Bravo 1 SMG";
 					synchronizations[]={99,100};
 				};
 			};
@@ -699,7 +684,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={536.71924,8.3922358,527.18597};
@@ -726,9 +711,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_B2_AR";
-					init="GrpUS_B2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Bravo 2 Automatic Rifleman";
+					text="UnitUS_B2_M";
+					init="GrpUS_B2 = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					description="US Army Bravo 2 Marksman";
 					synchronizations[]={99,100};
 				};
 				class Item2
@@ -737,12 +722,12 @@ class Mission
 					azimut=1.13683;
 					id=44;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1Garand";
+					vehicle="I44_Man_A_Army_M1Carbine";
 					player="PLAY CDG";
 					skill=0.5;
-					text="UnitUS_B2_AAR";
-					init="GrpUS_B2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Bravo 2 Assistant Automatic Rifleman";
+					text="UnitUS_B2_CAR";
+					init="GrpUS_B2 = group this; nul = [""car"",this] call f_fnc_assignGear;";
+					description="US Army Bravo 2 M1 Carbine";
 					synchronizations[]={99,100};
 				};
 				class Item3
@@ -754,7 +739,21 @@ class Mission
 					vehicle="I44_Man_A_Army_M1A1Bazooka";
 					player="PLAY CDG";
 					skill=0.5;
-					text="UnitUS_B2_AT";
+					text="UnitUS_B2_GREN";
+					init="GrpUS_B2 = group this; nul = [""gren"",this] call f_fnc_assignGear;";
+					description="US Army Bravo 2 Grenadier";
+					synchronizations[]={99,100};
+				};
+				class Item4
+				{
+					position[]={535.55499,8.2150974,523.73816};
+					azimut=1.13683;
+					id=41;
+					side="WEST";
+					vehicle="I44_Man_A_Army_M1A1Bazooka";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitUS_B2_RAT";
 					init="GrpUS_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="US Army Bravo 2 Rifleman (AT)";
 					synchronizations[]={99,100};
@@ -795,7 +794,7 @@ class Mission
 					skill=0.5;
 					text="UnitUS_B3_AR";
 					init="GrpUS_B3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Bravo 3 Automatic Rifleman";
+					description="US Army Bravo 3 BAR Gunner";
 					synchronizations[]={99,100};
 				};
 				class Item2
@@ -809,7 +808,7 @@ class Mission
 					skill=0.5;
 					text="UnitUS_B3_AAR";
 					init="GrpUS_B3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Bravo 3 Assistant Automatic Rifleman";
+					description="US Army Bravo 3 BAR Assistant";
 					synchronizations[]={100,99};
 				};
 				class Item3
@@ -818,12 +817,12 @@ class Mission
 					azimut=1.13683;
 					id=49;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1A1Bazooka";
+					vehicle="I44_Man_A_Army_M1Carbine";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitUS_B3_AT";
-					init="GrpUS_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="US Army Bravo 3 Rifleman (AT)";
+					init="GrpUS_B3 = group this; nul = [""car"",this] call f_fnc_assignGear;";
+					description="US Army Bravo 3 M1 Carbine";
 					synchronizations[]={99,100};
 				};
 			};
@@ -845,7 +844,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitUS_CSL_SL";
-					init="GrpUS_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpUS_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="US Army Charlie Squad Leader";
 					synchronizations[]={99,100};
 				};
@@ -870,7 +869,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={568.46143,9.2160263,551.68158};
@@ -892,12 +891,12 @@ class Mission
 					azimut=1.1368302;
 					id=53;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1918A2";
+					vehicle="I44_Man_A_Army_M1A1Thompson";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_C1_AR";
-					init="GrpUS_C1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Charlie 1 Automatic Rifleman";
+					text="UnitUS_C1_SMG1";
+					init="GrpUS_C1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="US Army Charlie 1 SMG";
 					synchronizations[]={99,100};
 				};
 				class Item2
@@ -906,24 +905,11 @@ class Mission
 					azimut=1.1368302;
 					id=54;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1Garand";
+					vehicle="I44_Man_A_Army_M1A1Thompson";
 					skill=0.5;
-					text="UnitUS_C1_AAR";
-					init="GrpUS_C1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Charlie 1 Assistant Automatic Rifleman";
-					synchronizations[]={99,100};
-				};
-				class Item3
-				{
-					position[]={577.00732,8.6905661,548.36615};
-					azimut=1.1368302;
-					id=55;
-					side="WEST";
-					vehicle="I44_Man_A_Army_M1A1Bazooka";
-					skill=0.5;
-					text="UnitUS_C1_AT";
-					init="GrpUS_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="US Army Charlie 1 Rifleman (AT)";
+					text="UnitUS_C1_SMG2";
+					init="GrpUS_C1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="US Army Charlie 1 SMG";
 					synchronizations[]={99,100};
 				};
 			};
@@ -933,7 +919,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={568.17334,8.11689,527.01215};
@@ -958,9 +944,9 @@ class Mission
 					vehicle="I44_Man_A_Army_M1918A2";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitUS_C2_AR";
-					init="GrpUS_C2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Charlie 2 Automatic Rifleman";
+					text="UnitUS_C2_M";
+					init="GrpUS_C2 = group this; nul = [""sn"",this] call f_fnc_assignGear;";
+					description="US Army Charlie 2 Marksman";
 					synchronizations[]={99,100};
 				};
 				class Item2
@@ -969,11 +955,11 @@ class Mission
 					azimut=1.1368302;
 					id=58;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1Garand";
+					vehicle="I44_Man_A_Army_M1Carbine";
 					skill=0.5;
-					text="UnitUS_C2_AAR";
-					init="GrpUS_C2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Charlie 2 Assistant Automatic Rifleman";
+					text="UnitUS_C2_CAR";
+					init="GrpUS_C2 = group this; nul = [""car"",this] call f_fnc_assignGear;";
+					description="US Army Charlie 2 M1 Carbine";
 					synchronizations[]={99,100};
 				};
 				class Item3
@@ -981,6 +967,19 @@ class Mission
 					position[]={576.71729,8.0230408,523.69672};
 					azimut=1.1368302;
 					id=59;
+					side="WEST";
+					vehicle="I44_Man_A_Army_M1A1Bazooka";
+					skill=0.5;
+					text="UnitUS_C2_GREN";
+					init="GrpUS_C2 = group this; nul = [""gren"",this] call f_fnc_assignGear;";
+					description="US Army Charlie 2 Grenadier";
+					synchronizations[]={99,100};
+				};
+				class Item4
+				{
+					position[]={567.85919,8.133029,522.87634};
+					azimut=1.1368302;
+					id=55;
 					side="WEST";
 					vehicle="I44_Man_A_Army_M1A1Bazooka";
 					skill=0.5;
@@ -1023,7 +1022,7 @@ class Mission
 					skill=0.5;
 					text="UnitUS_C3_AR";
 					init="GrpUS_C3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="US Army Charlie 3 Automatic Rifleman";
+					description="US Army Charlie 3 BAR Gunner";
 					synchronizations[]={99,100};
 				};
 				class Item2
@@ -1036,7 +1035,7 @@ class Mission
 					skill=0.5;
 					text="UnitUS_C3_AAR";
 					init="GrpUS_C3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="US Army Charlie 3 Assistant Automatic Rifleman";
+					description="US Army Charlie 3 BAR Assistant";
 					synchronizations[]={99,100};
 				};
 				class Item3
@@ -1045,11 +1044,11 @@ class Mission
 					azimut=1.1368302;
 					id=63;
 					side="WEST";
-					vehicle="I44_Man_A_Army_M1A1Bazooka";
+					vehicle="I44_Man_A_Army_M1Carbine";
 					skill=0.5;
 					text="UnitUS_C3_AT";
-					init="GrpUS_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="US Army Charlie 3 Rifleman (AT)";
+					init="GrpUS_C3 = group this; nul = [""car"",this] call f_fnc_assignGear;";
+					description="US Army Charlie 3 Carbine";
 					synchronizations[]={99,100};
 				};
 			};
@@ -1827,11 +1826,12 @@ class Mission
 					id=119;
 					side="WEST";
 					vehicle="I44_Man_B_Army_NCO_StenMk5";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_ASL_SL";
-					init="GrpBAF_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpBAF_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Royal Army Alpha Squad Leader";
 					synchronizations[]={198,199};
 				};
@@ -1855,10 +1855,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
-					position[]={524.88434,8.0230408,307.66345};
+					position[]={524.32977,8.0230408,307.9964};
 					id=121;
 					side="WEST";
 					vehicle="I44_Man_B_Army_StenMk5";
@@ -1867,48 +1867,35 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_A1_FTL";
-					init="GrpBAF_A1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 1 Fireteam Leader";
+					init="GrpBAF_A1 = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="Royal Army Alpha 1 Fireteam Leader (Thompson)";
 					synchronizations[]={198,199};
 				};
 				class Item1
 				{
-					position[]={527.71637,8.0230408,305.35388};
+					position[]={524.40399,8.0230408,305.1842};
 					id=122;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_StenMk5";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitBAF_A1_AR";
-					init="GrpBAF_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 1 Automatic Rifleman";
+					text="UnitBAF_A1_SMG1";
+					init="GrpBAF_A1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="Royal Army Alpha 1 SMG";
 					synchronizations[]={198,199};
 				};
 				class Item2
 				{
-					position[]={531.26324,8.0230408,305.35388};
+					position[]={527.31384,8.0230408,305.22662};
 					id=123;
 					side="WEST";
 					vehicle="I44_Man_B_Army_StenMk2";
 					player="PLAY CDG";
 					skill=0.5;
-					text="UnitBAF_A1_AAR";
-					init="GrpBAF_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 1 Assistant Automatic Rifleman";
-					synchronizations[]={198,199};
-				};
-				class Item3
-				{
-					position[]={534.81207,8.0230408,305.11755};
-					id=124;
-					side="WEST";
-					vehicle="I44_Man_B_Army_PIAT";
-					player="PLAY CDG";
-					skill=0.5;
-					text="UnitBAF_A1_AT";
-					init="GrpBAF_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 1 Rifleman (AT)";
+					text="UnitBAF_A1_SMG2";
+					init="GrpBAF_A1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="Royal Army Alpha 1 SMG";
 					synchronizations[]={198,199};
 				};
 			};
@@ -1918,7 +1905,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={524.88434,8.0230408,282.81299};
@@ -1938,7 +1925,7 @@ class Mission
 					position[]={527.71637,8.0230408,280.50342};
 					id=126;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_A2_AR";
@@ -1970,6 +1957,19 @@ class Mission
 					description="Royal Army Alpha 2 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
+				class Item4
+				{
+					position[]={525.08728,8.0230408,280.68762};
+					id=124;
+					side="WEST";
+					vehicle="I44_Man_B_Army_PIAT";
+					player="PLAY CDG";
+					skill=0.5;
+					text="UnitBAF_A1_AT";
+					init="GrpBAF_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Royal Army Alpha 1 Rifleman (AT)";
+					synchronizations[]={198,199};
+				};
 			};
 		};
 		class Item48
@@ -1997,7 +1997,7 @@ class Mission
 					position[]={528.60797,8.0230408,257.48389};
 					id=130;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_A3_AR";
@@ -2047,7 +2047,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_BSL_SL";
-					init="GrpBAF_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpBAF_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Royal Army Bravo Squad Leader";
 					synchronizations[]={198,199};
 				};
@@ -2071,7 +2071,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={561.57867,8.0230408,308.21179};
@@ -2082,16 +2082,16 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_B1_FTL";
-					init="GrpBAF_B1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 1 Fireteam Leader";
+					init="GrpBAF_B1 = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="Royal Army Bravo 1 Fireteam Leader (Thompson)";
 					synchronizations[]={198,199};
 				};
 				class Item1
 				{
-					position[]={564.41071,8.0230408,305.90222};
+					position[]={561.54987,8.0230408,305.71912};
 					id=136;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_B1_AR";
@@ -2101,7 +2101,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={567.95807,8.0230408,305.90222};
+					position[]={563.81909,8.0230408,305.59796};
 					id=137;
 					side="WEST";
 					vehicle="I44_Man_B_Army_StenMk2";
@@ -2111,18 +2111,6 @@ class Mission
 					description="Royal Army Bravo 1 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
-				class Item3
-				{
-					position[]={571.50641,8.0230408,305.66589};
-					id=138;
-					side="WEST";
-					vehicle="I44_Man_B_Army_PIAT";
-					skill=0.5;
-					text="UnitBAF_B1_AT";
-					init="GrpBAF_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 1 Rifleman (AT)";
-					synchronizations[]={198,199};
-				};
 			};
 		};
 		class Item51
@@ -2130,7 +2118,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={561.76178,8.0230408,282.62817};
@@ -2150,7 +2138,7 @@ class Mission
 					position[]={564.5943,8.0230408,280.3186};
 					id=140;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_B2_AR";
@@ -2182,6 +2170,18 @@ class Mission
 					description="Royal Army Bravo 2 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
+				class Item4
+				{
+					position[]={562.45667,8.0230408,280.96344};
+					id=138;
+					side="WEST";
+					vehicle="I44_Man_B_Army_PIAT";
+					skill=0.5;
+					text="UnitBAF_B1_AT";
+					init="GrpBAF_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Royal Army Bravo 1 Rifleman (AT)";
+					synchronizations[]={198,199};
+				};
 			};
 		};
 		class Item52
@@ -2209,7 +2209,7 @@ class Mission
 					position[]={564.84821,8.0230408,257.24292};
 					id=144;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_B3_AR";
@@ -2259,7 +2259,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_CSL_SL";
-					init="GrpBAF_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpBAF_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Royal Army Charlie Squad Leader";
 					synchronizations[]={198,199};
 				};
@@ -2283,7 +2283,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={600.11578,8.0230408,308.53699};
@@ -2294,8 +2294,8 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_C1_FTL";
-					init="GrpBAF_C1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 1 Fireteam Leader";
+					init="GrpBAF_C1 = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="Royal Army Charlie 1 Fireteam Leader (Thompson)";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2303,7 +2303,7 @@ class Mission
 					position[]={602.94781,8.0230408,306.22742};
 					id=150;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_C1_AR";
@@ -2323,18 +2323,6 @@ class Mission
 					description="Royal Army Charlie 1 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
-				class Item3
-				{
-					position[]={610.04352,8.0230408,305.99109};
-					id=152;
-					side="WEST";
-					vehicle="I44_Man_B_Army_PIAT";
-					skill=0.5;
-					text="UnitBAF_C1_AT";
-					init="GrpBAF_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 1 Rifleman (AT)";
-					synchronizations[]={198,199};
-				};
 			};
 		};
 		class Item55
@@ -2342,7 +2330,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={600.43903,8.0230408,282.60327};
@@ -2362,7 +2350,7 @@ class Mission
 					position[]={603.27106,8.0230408,280.2937};
 					id=154;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_C2_AR";
@@ -2394,6 +2382,18 @@ class Mission
 					description="Royal Army Charlie 2 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
+				class Item4
+				{
+					position[]={600.61279,8.0230408,279.56439};
+					id=152;
+					side="WEST";
+					vehicle="I44_Man_B_Army_PIAT";
+					skill=0.5;
+					text="UnitBAF_C1_AT";
+					init="GrpBAF_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Royal Army Charlie 1 Rifleman (AT)";
+					synchronizations[]={198,199};
+				};
 			};
 		};
 		class Item56
@@ -2421,7 +2421,7 @@ class Mission
 					position[]={603.75739,8.0230408,258.09033};
 					id=158;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitBAF_C3_AR";
@@ -2948,7 +2948,7 @@ class Mission
 					position[]={648.18542,8.0230408,266.00647};
 					id=188;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
@@ -2961,7 +2961,7 @@ class Mission
 					position[]={652.24329,8.0230408,265.47217};
 					id=189;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -2973,7 +2973,7 @@ class Mission
 					position[]={655.55383,8.0230408,265.47046};
 					id=190;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -2985,7 +2985,7 @@ class Mission
 					position[]={658.98547,8.0230408,265.46973};
 					id=191;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -2997,7 +2997,7 @@ class Mission
 					position[]={649.04993,8.0230408,260.14966};
 					id=192;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -3009,7 +3009,7 @@ class Mission
 					position[]={652.36243,8.0230408,260.14819};
 					id=193;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -3021,7 +3021,7 @@ class Mission
 					position[]={655.79211,8.0230408,260.14722};
 					id=194;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -3033,7 +3033,7 @@ class Mission
 					position[]={659.46008,8.0230408,260.26636};
 					id=195;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -3045,7 +3045,7 @@ class Mission
 					position[]={662.51672,8.0230408,265.53369};
 					id=196;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -3057,7 +3057,7 @@ class Mission
 					position[]={662.99329,8.0230408,260.33032};
 					id=197;
 					side="WEST";
-					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82_No82";
+					vehicle="I44_Man_B_Army_SMLENo4Mk1_No82";
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
@@ -3189,7 +3189,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitWH_ASL_SL";
-					init="GrpWH_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpWH_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Heer Alpha Squad Leader";
 					synchronizations[]={283,284};
 				};
@@ -3213,7 +3213,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={2511.3821,8.0230408,279.43201};
@@ -3254,18 +3254,6 @@ class Mission
 					description="Heer Alpha 1 Assistant Automatic Rifleman";
 					synchronizations[]={283,284};
 				};
-				class Item3
-				{
-					position[]={2519.9426,8.0230408,277.10583};
-					id=209;
-					side="EAST";
-					vehicle="I44_Man_G_WH_K98k_PzF30";
-					skill=0.5;
-					text="UnitWH_A1_RRPG";
-					init="GrpWH_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Heer Alpha 1 Rifleman (AT)";
-					synchronizations[]={283,284};
-				};
 			};
 		};
 		class Item78
@@ -3273,7 +3261,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={2511.3821,8.0230408,254.50305};
@@ -3320,9 +3308,21 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_K98k_PzF30";
 					skill=0.5;
-					text="UnitWH_A2_RRPG";
+					text="UnitWH_A2_RAT";
 					init="GrpWH_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Heer Alpha 2 Rifleman (AT)";
+					synchronizations[]={283,284};
+				};
+				class Item4
+				{
+					position[]={2510.3684,8.0230408,251.23059};
+					id=209;
+					side="EAST";
+					vehicle="I44_Man_G_WH_K98k_PzF30";
+					skill=0.5;
+					text="UnitWH_A1_RAT";
+					init="GrpWH_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Heer Alpha 1 Rifleman (AT)";
 					synchronizations[]={283,284};
 				};
 			};
@@ -3379,7 +3379,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_K98k_PzF30";
 					skill=0.5;
-					text="UnitWH_A3_RRPG";
+					text="UnitWH_A3_RAT";
 					init="GrpWH_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Heer Alpha 3 Rifleman (AT)";
 					synchronizations[]={283,284};
@@ -3402,7 +3402,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitWH_BSL_SL";
-					init="GrpWH_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpWH_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Heer Bravo Squad Leader";
 					synchronizations[]={283,284};
 				};
@@ -3473,7 +3473,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_K98k_PzF30";
 					skill=0.5;
-					text="UnitWH_B1_RRPG";
+					text="UnitWH_B1_RAT";
 					init="GrpWH_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Heer Bravo 1 Rifleman (AT)";
 					synchronizations[]={283,284};
@@ -3532,7 +3532,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_K98k_PzF30";
 					skill=0.5;
-					text="UnitWH_B2_RRPG";
+					text="UnitWH_B2_RAT";
 					init="GrpWH_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Heer Bravo 2 Rifleman (AT)";
 					synchronizations[]={283,284};
@@ -3591,7 +3591,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_K98k_PzF30";
 					skill=0.5;
-					text="UnitWH_B3_RRPG";
+					text="UnitWH_B3_RAT";
 					init="GrpWH_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Heer Bravo 3 Rifleman (AT)";
 					synchronizations[]={283,284};
@@ -3614,7 +3614,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitWH_CSL_SL";
-					init="GrpWH_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpWH_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Heer Charlie Squad Leader";
 					synchronizations[]={283,284};
 				};
@@ -3685,7 +3685,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_K98k_PzF30";
 					skill=0.5;
-					text="UnitWH_C1_RRPG";
+					text="UnitWH_C1_RAT";
 					init="GrpWH_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Heer Charlie 1 Rifleman (AT)";
 					synchronizations[]={283,284};
@@ -3744,7 +3744,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_K98k_PzF30";
 					skill=0.5;
-					text="UnitWH_C2_RRPG";
+					text="UnitWH_C2_RAT";
 					init="GrpWH_C2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Heer Charlie 2 Rifleman (AT)";
 					synchronizations[]={283,284};
@@ -3803,7 +3803,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WH_K98k_PzF30";
 					skill=0.5;
-					text="UnitWH_C3_RRPG";
+					text="UnitWH_C3_RAT";
 					init="GrpWH_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Heer Charlie 3 Rifleman (AT)";
 					synchronizations[]={283,284};
@@ -4510,7 +4510,7 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={2492.6423,13.219856,571.8927};
+					position[]={2491.8367,12.94701,568.8382};
 					id=289;
 					side="EAST";
 					vehicle="I44_Man_G_SS_NCO_MP43";
@@ -4518,13 +4518,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitSS_ASL_SL";
-					init="GrpSS_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpSS_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Waffen SS Alpha Squad Leader";
 					synchronizations[]={368,369};
 				};
 				class Item1
 				{
-					position[]={2495.738,12.771236,569.07825};
+					position[]={2495.6506,12.748822,568.81641};
 					id=290;
 					side="EAST";
 					vehicle="I44_Man_G_SS_Medic";
@@ -4542,13 +4542,14 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={2492.6057,10.916229,548.15637};
 					id=291;
 					side="EAST";
 					vehicle="I44_Man_G_SS_MP43";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.5;
@@ -4559,40 +4560,29 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={2495.7014,10.627028,545.34192};
+					position[]={2492.8193,10.619973,545.27325};
 					id=292;
 					side="EAST";
-					vehicle="I44_Man_G_SS_MG34";
+					vehicle="I44_Man_G_SS_MP43";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.5;
-					text="UnitSS_A1_AR";
-					init="GrpSS_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Waffen SS Alpha 1 Automatic Rifleman";
+					text="UnitSS_A1_SMG1";
+					init="GrpSS_A1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="Waffen SS Alpha 1 StG";
 					synchronizations[]={368,369};
 				};
 				class Item2
 				{
-					position[]={2498.3596,10.613031,545.20569};
+					position[]={2495.4775,10.605976,545.13702};
 					id=293;
 					side="EAST";
 					vehicle="I44_Man_G_SS_MP40";
 					player="PLAY CDG";
 					skill=0.5;
-					text="UnitSS_A1_AAR";
-					init="GrpSS_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Waffen SS Alpha 1 Assistant Automatic Rifleman";
-					synchronizations[]={368,369};
-				};
-				class Item3
-				{
-					position[]={2501.0569,10.614285,545.2179};
-					id=294;
-					side="EAST";
-					vehicle="I44_Man_G_SS_K98k_PzF60";
-					skill=0.5;
-					text="UnitSS_A1_RRPG";
-					init="GrpSS_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Waffen SS Alpha 1 Rifleman (AT)";
+					text="UnitSS_A1_SMG2";
+					init="GrpSS_A1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
+					description="Waffen SS Alpha 1 StG";
 					synchronizations[]={368,369};
 				};
 			};
@@ -4602,7 +4592,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={2492.9705,8.4588165,522.75574};
@@ -4649,9 +4639,21 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_K98k_PzF60";
 					skill=0.5;
-					text="UnitSS_A2_RRPG";
+					text="UnitSS_A2_RAT";
 					init="GrpSS_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Waffen SS Alpha 2 Rifleman (AT)";
+					synchronizations[]={368,369};
+				};
+				class Item4
+				{
+					position[]={2492.3105,8.1138458,519.45679};
+					id=294;
+					side="EAST";
+					vehicle="I44_Man_G_SS_K98k_PzF60";
+					skill=0.5;
+					text="UnitSS_A1_RAT";
+					init="GrpSS_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Waffen SS Alpha 1 Rifleman (AT)";
 					synchronizations[]={368,369};
 				};
 			};
@@ -4708,7 +4710,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_K98k_PzF60";
 					skill=0.5;
-					text="UnitSS_A3_RRPG";
+					text="UnitSS_A3_RAT";
 					init="GrpSS_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Waffen SS Alpha 3 Rifleman (AT)";
 					synchronizations[]={368,369};
@@ -4731,7 +4733,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitSS_BSL_SL";
-					init="GrpSS_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpSS_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Waffen SS Bravo Squad Leader";
 					synchronizations[]={368,369};
 				};
@@ -4755,7 +4757,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={2519.9895,10.484081,547.90149};
@@ -4795,18 +4797,6 @@ class Mission
 					description="Waffen SS Bravo 1 Assistant Automatic Rifleman";
 					synchronizations[]={368,369};
 				};
-				class Item3
-				{
-					position[]={2528.4407,10.333112,544.96301};
-					id=308;
-					side="EAST";
-					vehicle="I44_Man_G_SS_K98k_PzF60";
-					skill=0.5;
-					text="UnitSS_B1_RRPG";
-					init="GrpSS_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Waffen SS Bravo 1 Rifleman (AT)";
-					synchronizations[]={368,369};
-				};
 			};
 		};
 		class Item113
@@ -4814,7 +4804,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={2523.1736,8.7389517,523.93445};
@@ -4861,9 +4851,21 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_K98k_PzF60";
 					skill=0.5;
-					text="UnitSS_B2_RRPG";
+					text="UnitSS_B2_RAT";
 					init="GrpSS_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Waffen SS Bravo 2 Rifleman (AT)";
+					synchronizations[]={368,369};
+				};
+				class Item4
+				{
+					position[]={2524.0298,8.58634,520.96399};
+					id=308;
+					side="EAST";
+					vehicle="I44_Man_G_SS_K98k_PzF60";
+					skill=0.5;
+					text="UnitSS_B1_RAT";
+					init="GrpSS_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Waffen SS Bravo 1 Rifleman (AT)";
 					synchronizations[]={368,369};
 				};
 			};
@@ -4920,7 +4922,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_K98k_PzF60";
 					skill=0.5;
-					text="UnitSS_B3_RRPG";
+					text="UnitSS_B3_RAT";
 					init="GrpSS_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Waffen SS Bravo 3 Rifleman (AT)";
 					synchronizations[]={368,369};
@@ -4943,7 +4945,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitSS_CSL_SL";
-					init="GrpSS_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpSS_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Waffen SS Charlie Squad Leader";
 					synchronizations[]={368,369};
 				};
@@ -4967,7 +4969,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={2549.2971,10.500775,548.22644};
@@ -5007,18 +5009,6 @@ class Mission
 					description="Waffen SS Charlie 1 Assistant Automatic Rifleman";
 					synchronizations[]={368,369};
 				};
-				class Item3
-				{
-					position[]={2557.7483,10.505798,545.28796};
-					id=322;
-					side="EAST";
-					vehicle="I44_Man_G_SS_K98k_PzF60";
-					skill=0.5;
-					text="UnitSS_C1_RRPG";
-					init="GrpSS_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Waffen SS Charlie 1 Rifleman (AT)";
-					synchronizations[]={368,369};
-				};
 			};
 		};
 		class Item117
@@ -5026,7 +5016,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={2549.9446,8.7130499,523.4303};
@@ -5073,9 +5063,21 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_K98k_PzF60";
 					skill=0.5;
-					text="UnitSS_C2_RRPG";
+					text="UnitSS_C2_RAT";
 					init="GrpSS_C2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Waffen SS Charlie 2 Rifleman (AT)";
+					synchronizations[]={368,369};
+				};
+				class Item4
+				{
+					position[]={2548.927,8.5393934,520.05023};
+					id=322;
+					side="EAST";
+					vehicle="I44_Man_G_SS_K98k_PzF60";
+					skill=0.5;
+					text="UnitSS_C1_RAT";
+					init="GrpSS_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Waffen SS Charlie 1 Rifleman (AT)";
 					synchronizations[]={368,369};
 				};
 			};
@@ -5132,7 +5134,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_SS_K98k_PzF60";
 					skill=0.5;
-					text="UnitSS_C3_RRPG";
+					text="UnitSS_C3_RAT";
 					init="GrpSS_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Waffen SS Charlie 3 Rifleman (AT)";
 					synchronizations[]={368,369};
@@ -5844,7 +5846,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitFJ_ASL_SL";
-					init="GrpFJ_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpFJ_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Alpha Squad Leader";
 					synchronizations[]={462,463};
 				};
@@ -5868,7 +5870,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={2823.4539,8.0230408,569.90234};
@@ -5908,18 +5910,6 @@ class Mission
 					description="Fallschirmjaeger Alpha 1 Assistant Automatic Rifleman";
 					synchronizations[]={462,463};
 				};
-				class Item3
-				{
-					position[]={2831.905,8.0230408,566.96387};
-					id=388;
-					side="EAST";
-					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
-					skill=0.5;
-					text="UnitFJ_A1_RRPG";
-					init="GrpFJ_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Fallschirmjaeger Alpha 1 Rifleman (AT)";
-					synchronizations[]={462,463};
-				};
 			};
 		};
 		class Item140
@@ -5927,7 +5917,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={2823.8188,8.0230408,544.50177};
@@ -5974,9 +5964,21 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
 					skill=0.5;
-					text="UnitFJ_A2_RRPG";
+					text="UnitFJ_A2_RAT";
 					init="GrpFJ_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Alpha 2 Rifleman (AT)";
+					synchronizations[]={462,463};
+				};
+				class Item4
+				{
+					position[]={2823.4456,8.0230408,541.6712};
+					id=388;
+					side="EAST";
+					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
+					skill=0.5;
+					text="UnitFJ_A1_RAT";
+					init="GrpFJ_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Fallschirmjaeger Alpha 1 Rifleman (AT)";
 					synchronizations[]={462,463};
 				};
 			};
@@ -6033,7 +6035,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
 					skill=0.5;
-					text="UnitFJ_A3_RRPG";
+					text="UnitFJ_A3_RAT";
 					init="GrpFJ_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Alpha 3 Rifleman (AT)";
 					synchronizations[]={462,463};
@@ -6056,7 +6058,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitFJ_BSL_SL";
-					init="GrpFJ_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpFJ_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Bravo Squad Leader";
 					synchronizations[]={462,463};
 				};
@@ -6080,7 +6082,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={2850.8381,8.0230408,569.64752};
@@ -6121,18 +6123,6 @@ class Mission
 					description="Fallschirmjaeger Bravo 1 Assistant Automatic Rifleman";
 					synchronizations[]={462,463};
 				};
-				class Item3
-				{
-					position[]={2859.2893,8.0230408,566.70905};
-					id=402;
-					side="EAST";
-					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
-					skill=0.5;
-					text="UnitFJ_B1_RRPG";
-					init="GrpFJ_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Fallschirmjaeger Bravo 1 Rifleman (AT)";
-					synchronizations[]={462,463};
-				};
 			};
 		};
 		class Item144
@@ -6140,7 +6130,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={2854.022,8.0230408,545.68054};
@@ -6187,9 +6177,21 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
 					skill=0.5;
-					text="UnitFJ_B2_RRPG";
+					text="UnitFJ_B2_RAT";
 					init="GrpFJ_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Bravo 2 Rifleman (AT)";
+					synchronizations[]={462,463};
+				};
+				class Item4
+				{
+					position[]={2854.8625,8.0230408,541.81006};
+					id=402;
+					side="EAST";
+					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
+					skill=0.5;
+					text="UnitFJ_B1_RAT";
+					init="GrpFJ_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Fallschirmjaeger Bravo 1 Rifleman (AT)";
 					synchronizations[]={462,463};
 				};
 			};
@@ -6246,7 +6248,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
 					skill=0.5;
-					text="UnitFJ_B3_RRPG";
+					text="UnitFJ_B3_RAT";
 					init="GrpFJ_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Bravo 3 Rifleman (AT)";
 					synchronizations[]={462,463};
@@ -6269,7 +6271,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitFJ_CSL_SL";
-					init="GrpFJ_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpFJ_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Charlie Squad Leader";
 					synchronizations[]={462,463};
 				};
@@ -6293,7 +6295,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=3;
 				class Item0
 				{
 					position[]={2880.145,8.0230408,569.97253};
@@ -6333,18 +6335,6 @@ class Mission
 					description="Fallschirmjaeger Charlie 1 Assistant Automatic Rifleman";
 					synchronizations[]={462,463};
 				};
-				class Item3
-				{
-					position[]={2888.5962,8.0230408,567.03406};
-					id=416;
-					side="EAST";
-					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
-					skill=0.5;
-					text="UnitFJ_C1_RRPG";
-					init="GrpFJ_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Fallschirmjaeger Charlie 1 Rifleman (AT)";
-					synchronizations[]={462,463};
-				};
 			};
 		};
 		class Item148
@@ -6352,7 +6342,7 @@ class Mission
 			side="EAST";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={2880.7925,8.0230408,545.17621};
@@ -6399,9 +6389,21 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
 					skill=0.5;
-					text="UnitFJ_C2_RRPG";
+					text="UnitFJ_C2_RAT";
 					init="GrpFJ_C2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Charlie 2 Rifleman (AT)";
+					synchronizations[]={462,463};
+				};
+				class Item4
+				{
+					position[]={2879.1528,8.0230408,540.75751};
+					id=416;
+					side="EAST";
+					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
+					skill=0.5;
+					text="UnitFJ_C1_RAT";
+					init="GrpFJ_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="Fallschirmjaeger Charlie 1 Rifleman (AT)";
 					synchronizations[]={462,463};
 				};
 			};
@@ -6458,7 +6460,7 @@ class Mission
 					side="EAST";
 					vehicle="I44_Man_G_WL_FJ_K98k_PzF60";
 					skill=0.5;
-					text="UnitFJ_C3_RRPG";
+					text="UnitFJ_C3_RAT";
 					init="GrpFJ_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Charlie 3 Rifleman (AT)";
 					synchronizations[]={462,463};
