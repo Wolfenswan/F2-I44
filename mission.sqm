@@ -1760,7 +1760,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_CO";
 					init="GrpBAF_CO = group this; nul = [""co"",this] call f_fnc_assignGear;";
-					description="Royal Army Commander";
+					description="British Army Commander";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -1774,7 +1774,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_CO_M";
 					init="GrpBAF_CO = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="Royal Army Medic";
+					description="British Army Medic";
 					synchronizations[]={198,199};
 				};
 			};
@@ -1796,7 +1796,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_DC";
 					init="GrpBAF_DC = group this; nul = [""co"",this] call f_fnc_assignGear;";
-					description="Royal Army Deputy Commander";
+					description="British Army Deputy Commander";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -1809,7 +1809,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_DC_M";
 					init="GrpBAF_DC = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="Royal Army Medic";
+					description="British Army Medic";
 					synchronizations[]={198,199};
 				};
 			};
@@ -1832,7 +1832,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_ASL_SL";
 					init="GrpBAF_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha Squad Leader";
+					description="British Army Alpha Squad Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -1845,7 +1845,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_ASL_M";
 					init="GrpBAF_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha Medic";
+					description="British Army Alpha Medic";
 					synchronizations[]={198,199};
 				};
 			};
@@ -1868,7 +1868,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A1_FTL";
 					init="GrpBAF_A1 = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 1 Fireteam Leader (Thompson)";
+					description="British Army Alpha 1 Fireteam Leader (Thompson)";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -1882,7 +1882,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A1_SMG1";
 					init="GrpBAF_A1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 1 SMG";
+					description="British Army Alpha 1 SMG";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -1895,7 +1895,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A1_SMG2";
 					init="GrpBAF_A1 = group this; nul = [""smg"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 1 SMG";
+					description="British Army Alpha 1 SMG";
 					synchronizations[]={198,199};
 				};
 			};
@@ -1917,7 +1917,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A2_FTL";
 					init="GrpBAF_A2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 2 Fireteam Leader";
+					description="British Army Alpha 2 Fireteam Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -1930,7 +1930,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A2_AR";
 					init="GrpBAF_A2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 2 Automatic Rifleman";
+					description="British Army Alpha 2 Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -1942,7 +1942,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A2_AAR";
 					init="GrpBAF_A2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 2 Assistant Automatic Rifleman";
+					description="British Army Alpha 2 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item3
@@ -1954,7 +1954,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A2_AT";
 					init="GrpBAF_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 2 Rifleman (AT)";
+					description="British Army Alpha 2 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 				class Item4
@@ -1967,7 +1967,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A1_AT";
 					init="GrpBAF_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 1 Rifleman (AT)";
+					description="British Army Alpha 1 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 			};
@@ -1989,7 +1989,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A3_FTL";
 					init="GrpBAF_A3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 3 Fireteam Leader";
+					description="British Army Alpha 3 Fireteam Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2002,7 +2002,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A3_AR";
 					init="GrpBAF_A3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 3 Automatic Rifleman";
+					description="British Army Alpha 3 Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2014,7 +2014,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A3_AAR";
 					init="GrpBAF_A3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 3 Assistant Automatic Rifleman";
+					description="British Army Alpha 3 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item3
@@ -2026,7 +2026,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_A3_AT";
 					init="GrpBAF_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Alpha 3 Rifleman (AT)";
+					description="British Army Alpha 3 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2048,7 +2048,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_BSL_SL";
 					init="GrpBAF_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo Squad Leader";
+					description="British Army Bravo Squad Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2061,7 +2061,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_BSL_M";
 					init="GrpBAF_BSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo Medic";
+					description="British Army Bravo Medic";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2083,7 +2083,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B1_FTL";
 					init="GrpBAF_B1 = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 1 Fireteam Leader (Thompson)";
+					description="British Army Bravo 1 Fireteam Leader (Thompson)";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2096,7 +2096,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B1_AR";
 					init="GrpBAF_B1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 1 Automatic Rifleman";
+					description="British Army Bravo 1 Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2108,7 +2108,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B1_AAR";
 					init="GrpBAF_B1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 1 Assistant Automatic Rifleman";
+					description="British Army Bravo 1 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2130,7 +2130,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B2_FTL";
 					init="GrpBAF_B2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 2 Fireteam Leader";
+					description="British Army Bravo 2 Fireteam Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2143,7 +2143,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B2_AR";
 					init="GrpBAF_B2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 2 Automatic Rifleman";
+					description="British Army Bravo 2 Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2155,7 +2155,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B2_AAR";
 					init="GrpBAF_B2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 2 Assistant Automatic Rifleman";
+					description="British Army Bravo 2 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item3
@@ -2167,7 +2167,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B2_AT";
 					init="GrpBAF_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 2 Rifleman (AT)";
+					description="British Army Bravo 2 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 				class Item4
@@ -2179,7 +2179,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B1_AT";
 					init="GrpBAF_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 1 Rifleman (AT)";
+					description="British Army Bravo 1 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2201,7 +2201,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B3_FTL";
 					init="GrpBAF_B3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 3 Fireteam Leader";
+					description="British Army Bravo 3 Fireteam Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2214,7 +2214,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B3_AR";
 					init="GrpBAF_B3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 3 Automatic Rifleman";
+					description="British Army Bravo 3 Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2226,7 +2226,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B3_AAR";
 					init="GrpBAF_B3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 3 Assistant Automatic Rifleman";
+					description="British Army Bravo 3 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item3
@@ -2238,7 +2238,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_B3_AT";
 					init="GrpBAF_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Bravo 3 Rifleman (AT)";
+					description="British Army Bravo 3 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2260,7 +2260,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_CSL_SL";
 					init="GrpBAF_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie Squad Leader";
+					description="British Army Charlie Squad Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2273,7 +2273,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_CSL_M";
 					init="GrpBAF_CSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie Medic";
+					description="British Army Charlie Medic";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2295,7 +2295,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C1_FTL";
 					init="GrpBAF_C1 = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 1 Fireteam Leader (Thompson)";
+					description="British Army Charlie 1 Fireteam Leader (Thompson)";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2308,7 +2308,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C1_AR";
 					init="GrpBAF_C1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 1 Automatic Rifleman";
+					description="British Army Charlie 1 Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2320,7 +2320,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C1_AAR";
 					init="GrpBAF_C1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 1 Assistant Automatic Rifleman";
+					description="British Army Charlie 1 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2342,7 +2342,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C2_FTL";
 					init="GrpBAF_C2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 2 Fireteam Leader";
+					description="British Army Charlie 2 Fireteam Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2355,7 +2355,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C2_AR";
 					init="GrpBAF_C2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 2 Automatic Rifleman";
+					description="British Army Charlie 2 Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2367,7 +2367,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C2_AAR";
 					init="GrpBAF_C2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 2 Assistant Automatic Rifleman";
+					description="British Army Charlie 2 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item3
@@ -2379,7 +2379,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C2_AT";
 					init="GrpBAF_C2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 2 Rifleman (AT)";
+					description="British Army Charlie 2 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 				class Item4
@@ -2391,7 +2391,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C1_AT";
 					init="GrpBAF_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 1 Rifleman (AT)";
+					description="British Army Charlie 1 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2413,7 +2413,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C3_FTL";
 					init="GrpBAF_C3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 3 Fireteam Leader";
+					description="British Army Charlie 3 Fireteam Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2426,7 +2426,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C3_AR";
 					init="GrpBAF_C3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 3 Automatic Rifleman";
+					description="British Army Charlie 3 Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2438,7 +2438,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C3_AAR";
 					init="GrpBAF_C3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 3 Assistant Automatic Rifleman";
+					description="British Army Charlie 3 Assistant Automatic Rifleman";
 					synchronizations[]={198,199};
 				};
 				class Item3
@@ -2450,7 +2450,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_C3_AT";
 					init="GrpBAF_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Royal Army Charlie 3 Rifleman (AT)";
+					description="British Army Charlie 3 Rifleman (AT)";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2473,7 +2473,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_MMG1_G";
 					init="GrpBAF_MMG1 = group this; nul = [""mmgg"",this] call f_fnc_assignGear;";
-					description="Royal Army Medium MG Team 1 Gunner";
+					description="British Army Medium MG Team 1 Gunner";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2486,7 +2486,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_MMG1_AG";
 					init="GrpBAF_MMG1 = group this; nul = [""mmgag"",this] call f_fnc_assignGear;";
-					description="Royal Army Medium MG Team 1 Assistant Gunner";
+					description="British Army Medium MG Team 1 Assistant Gunner";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2509,7 +2509,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_HMG1_G";
 					init="GrpBAF_HMG1 = group this; nul = [""hmgg"",this] call f_fnc_assignGear;";
-					description="Royal Army Heavy MG Team 1 Gunner";
+					description="British Army Heavy MG Team 1 Gunner";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2522,7 +2522,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_HMG1_AG";
 					init="GrpBAF_HMG1 = group this; nul = [""hmgag"",this] call f_fnc_assignGear;";
-					description="Royal Army Heavy MG Team 1 Assistant Gunner";
+					description="British Army Heavy MG Team 1 Assistant Gunner";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2545,7 +2545,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_MAT1_G";
 					init="GrpBAF_MAT1 = group this; nul = [""matg"",this] call f_fnc_assignGear;";
-					description="Royal Army Medium AT Team 1 Gunner";
+					description="British Army Medium AT Team 1 Gunner";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2558,7 +2558,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_MAT1_AG";
 					init="GrpBAF_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
-					description="Royal Army Medium AT Team 1 Assistant Gunner";
+					description="British Army Medium AT Team 1 Assistant Gunner";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2581,7 +2581,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_ATG1_G";
 					init="GrpBAF_ATG1 = group this; nul = [""ftl"",this] call f_fnc_assignGear; this moveInCommander BAF_ATG1;";
-					description="Royal Army AT Gun 1 Commander";
+					description="British Army AT Gun 1 Commander";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2594,7 +2594,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_ATG1_AG";
 					init="GrpBAF_ATG1 = group this; nul = [""r"",this] call f_fnc_assignGear; this moveInGunner BAF_ATG1;";
-					description="Royal Army AT Gun 1 Gunner";
+					description="British Army AT Gun 1 Gunner";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2617,7 +2617,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_FLM1_G";
 					init="GrpBAF_FLM1 = group this; nul = [""flmg"",this] call f_fnc_assignGear;";
-					description="Royal Army FLM Team 1 Gunner";
+					description="British Army FLM Team 1 Gunner";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2630,7 +2630,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_FLM1_AG";
 					init="GrpBAF_FLM1 = group this; nul = [""flmag"",this] call f_fnc_assignGear;";
-					description="Royal Army FLM Team 1 Assistant Gunner";
+					description="British Army FLM Team 1 Assistant Gunner";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2653,7 +2653,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_ST1_SN";
 					init="GrpBAF_ST1 = group this; nul = [""sn"",this] call f_fnc_assignGear;";
-					description="Royal Army Sniper Team 1 Sniper";
+					description="British Army Sniper Team 1 Sniper";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2666,7 +2666,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_ST1_SP";
 					init="GrpBAF_ST1 = group this; nul = [""sp"",this] call f_fnc_assignGear;";
-					description="Royal Army Sniper Team 1 Spotter";
+					description="British Army Sniper Team 1 Spotter";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2689,7 +2689,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_MTR1_G";
 					init="GrpBAF_MTR1 = group this; nul = [""mtrg"",this] call f_fnc_assignGear;";
-					description="Royal Army Mortar Team 1 Gunner";
+					description="British Army Mortar Team 1 Gunner";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2702,7 +2702,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_MTR1_AG";
 					init="GrpBAF_MTR1 = group this; nul = [""mtrag"",this] call f_fnc_assignGear;";
-					description="Royal Army Mortar Team 1 Assistant Gunner";
+					description="British Army Mortar Team 1 Assistant Gunner";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2725,7 +2725,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_ENG1_FTL";
 					init="GrpBAF_ENG1 = group this;  nul = [""eng"",this] call f_fnc_assignGear;";
-					description="Royal Army Engineer Team 1 Leader";
+					description="British Army Engineer Team 1 Leader";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2738,7 +2738,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_ENG1_A";
 					init="GrpBAF_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
-					description="Royal Army Engineer Team 1 Assistant";
+					description="British Army Engineer Team 1 Assistant";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2760,7 +2760,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_APC1_C";
 					init="GrpBAF_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_APC1;";
-					description="Royal Army APC 1 Gunner";
+					description="British Army APC 1 Gunner";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2772,7 +2772,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_APC1_D";
 					init="GrpBAF_APC1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_APC1;";
-					description="Royal Army APC 1 Driver";
+					description="British Army APC 1 Driver";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2794,7 +2794,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_APC2_C";
 					init="GrpBAF_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_APC2;";
-					description="Royal Army APC 2 Gunner";
+					description="British Army APC 2 Gunner";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2806,7 +2806,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_APC2_D";
 					init="GrpBAF_APC2 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_APC2;";
-					description="Royal Army APC 2 Driver";
+					description="British Army APC 2 Driver";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2828,7 +2828,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_APC3_C";
 					init="GrpBAF_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_APC3;";
-					description="Royal Army APC 3 Gunner";
+					description="British Army APC 3 Gunner";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2840,7 +2840,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_APC3_D";
 					init="GrpBAF_APC3 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_APC3;";
-					description="Royal Army APC 3 Driver";
+					description="British Army APC 3 Driver";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2862,7 +2862,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_TNK1_C";
 					init="GrpBAF_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInCommander BAF_TNK1;";
-					description="Royal Army Tank 1 Commander";
+					description="British Army Tank 1 Commander";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2874,7 +2874,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_TNK1_D";
 					init="GrpBAF_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInDriver BAF_TNK1;";
-					description="Royal Army Tank 1 Driver";
+					description="British Army Tank 1 Driver";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2886,7 +2886,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAF_TNK1_G";
 					init="GrpBAF_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear; this moveInGunner BAF_TNK1;";
-					description="Royal Army Tank 1 Gunner";
+					description="British Army Tank 1 Gunner";
 					synchronizations[]={198,199};
 				};
 			};
@@ -2953,7 +2953,7 @@ class Mission
 					leader=1;
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item1
@@ -2965,7 +2965,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item2
@@ -2977,7 +2977,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item3
@@ -2989,7 +2989,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item4
@@ -3001,7 +3001,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item5
@@ -3013,7 +3013,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item6
@@ -3025,7 +3025,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item7
@@ -3037,7 +3037,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item8
@@ -3049,7 +3049,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 				class Item9
@@ -3061,7 +3061,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.5;
 					init="nul = [""r"",this] call f_fnc_assignGear;GrpBAF_JIP = group this; nul = [this] execVM ""f\common\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="Royal Army RESERVED FOR JIP";
+					description="British Army RESERVED FOR JIP";
 					synchronizations[]={198,199};
 				};
 			};
