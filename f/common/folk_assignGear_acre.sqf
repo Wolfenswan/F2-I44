@@ -202,6 +202,7 @@ switch (_typeofUnit) do
 // LOADOUT: GROUND VEHICLE CREW COMMANDER
 	case "cco":
 	{
+			_unit addWeapon _radio1;
 			_unit addWeapon _radio2;
 	};		
 	
