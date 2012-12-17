@@ -146,6 +146,24 @@ player setVariable ["BIS_noCoreConversations", true];
 
 // [[GroupName],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
+// US
+//[[GrpUS_CO,GrpUS_DC,GrpUS_ASL,GrpUS_BSL,GrpUS_CSL,GrpUS_A1,GrpUS_A2,GrpUS_A3,GrpUS_B1,GrpUS_B2,GrpUS_B3,GrpUS_C1,GrpUS_C2,GrpUS_C3,GrpUS_MMG1,GrpUS_MAT1,GrpUS_ST1,GrpUS_ENG1,GrpUS_MTR1,GrpUS_HAT1,GrpUS_HMG1,GrpUS_SAM1,GrpUS_IFV1,GrpUS_IFV2,GrpUS_IFV3,GrpUS_TNK1,GrpUS_TH1,GrpUS_TH2,GrpUS_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+//
+// BAF
+//[[GrpBAF_CO,GrpBAF_DC,GrpBAF_ASL,GrpBAF_BSL,GrpBAF_CSL,GrpBAF_A1,GrpBAF_A2,GrpBAF_A3,GrpBAF_B1,GrpBAF_B2,GrpBAF_B3,GrpBAF_C1,GrpBAF_C2,GrpBAF_C3,GrpBAF_MMG1,GrpBAF_MAT1,GrpBAF_ST1,GrpBAF_ENG1,GrpBAF_MTR1,GrpBAF_HAT1,GrpBAF_HMG1,GrpBAF_SAM1,GrpBAF_IFV1,GrpBAF_IFV2,GrpBAF_IFV3,GrpBAF_TNK1,GrpBAF_TH1,GrpBAF_TH2,GrpBAF_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+//
+// Waffen-SS
+//[[GrpTK_CO,GrpTK_DC,GrpTK_ASL,GrpTK_BSL,GrpTK_CSL,GrpTK_A1,GrpTK_A2,GrpTK_A3,GrpTK_B1,GrpTK_B2,GrpTK_B3,GrpTK_C1,GrpTK_C2,GrpTK_C3,GrpTK_MMG1,GrpTK_MAT1,GrpTK_ST1,GrpTK_ENG1,GrpTK_MTR1,GrpTK_HAT1,GrpTK_HMG1,GrpTK_SAM1,GrpTK_IFV1,GrpTK_IFV2,GrpTK_IFV3,GrpTK_TNK1,GrpTK_TH1,GrpTK_TH2,GrpTK_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+//
+// Wehrmacht
+//[[GrpRU_CO,GrpRU_DC,GrpRU_ASL,GrpRU_BSL,GrpRU_CSL,GrpRU_A1,GrpRU_A2,GrpRU_A3,GrpRU_B1,GrpRU_B2,GrpRU_B3,GrpRU_C1,GrpRU_C2,GrpRU_C3,GrpRU_MMG1,GrpRU_MAT1,GrpRU_ST1,GrpRU_ENG1,GrpRU_MTR1,GrpRU_HAT1,GrpRU_HMG1,GrpRU_SAM1,GrpRU_IFV1,GrpRU_IFV2,GrpRU_IFV3,GrpRU_TNK1,GrpRU_TH1,GrpRU_TH2,GrpRU_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+//
+// Luftwaffe
+//[[GrpINS_CO,GrpINS_DC,GrpINS_ASL,GrpINS_BSL,GrpINS_CSL,GrpINS_A1,GrpINS_A2,GrpINS_A3,GrpINS_B1,GrpINS_B2,GrpINS_B3,GrpINS_C1,GrpINS_C2,GrpINS_C3,GrpINS_MMG1,GrpINS_MAT1,GrpINS_ST1,GrpINS_ENG1,GrpINS_MTR1,GrpINS_HAT1,GrpINS_HMG1,GrpINS_SAM1,GrpINS_IFV1,GrpINS_IFV2,GrpINS_IFV3,GrpINS_TNK1,GrpINS_TH1,GrpINS_TH2,GrpINS_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+//
+// French Resistance
+//[[GrpA2INS_CO,GrpA2INS_DC,GrpA2INS_ASL,GrpA2INS_BSL,GrpA2INS_CSL,GrpA2INS_A1,GrpA2INS_A2,GrpA2INS_A3,GrpA2INS_B1,GrpA2INS_B2,GrpA2INS_B3,GrpA2INS_C1,GrpA2INS_C2,GrpA2INS_C3,GrpA2INS_MMG1,GrpA2INS_MAT1,GrpA2INS_ST1,GrpA2INS_ENG1,GrpA2INS_MTR1,GrpA2INS_HAT1,GrpA2INS_HMG1,GrpA2INS_SAM1,GrpA2INS_IFV1,GrpA2INS_IFV2,GrpA2INS_IFV3,GrpA2INS_TNK1,GrpA2INS_TH1,GrpA2INS_TH2,GrpA2INS_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+//
 // ====================================================================================
 
 // F2 - Casualties Cap (Advanced)

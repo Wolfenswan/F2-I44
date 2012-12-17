@@ -9,13 +9,19 @@
 
 // ====================================================================================
 
+// DECLARE VARIABLES AND FUNCTIONS
+
+private ["_unitfaction"];
+
+// ====================================================================================
+
 // DETECT PLAYER FACTION
 // The following code detects what faction the player's slot belongs to, and stores
 // it in the private variable _unitfaction
 
 _unitfaction = toLower (faction player);
 
-// If the group leader's unit is of a different faction than the player, the markers for the group leader's faction will be displayed.
+// If the unitfaction is different from the group leader's faction, the latters faction is used
 if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction = toLower (faction (leader group player))};
 
 // ====================================================================================
