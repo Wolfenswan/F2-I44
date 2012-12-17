@@ -35,7 +35,11 @@
 //		r 		- rifleman
 //		car		- carabineer
 //		smg		- submachinegunner
-
+//
+//		v_car	- car/4WD
+//		v_tr	- truck
+//		v_apc	- apc
+//
 // ====================================================================================
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES

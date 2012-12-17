@@ -22,8 +22,6 @@
 //		hmgag	- heavy mg assistant (deployable)
 //		matg	- medium AT gunner
 //		matag	- medium AT assistant
-//		hatg	- heavy AT gunner
-//		hatg	- heavy AT assistant
 //		mtrg	- mortar gunner (deployable)
 //		mtrag	- mortar assistant (deployable)
 //		sn		- sniper
