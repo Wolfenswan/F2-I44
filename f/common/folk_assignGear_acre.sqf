@@ -104,31 +104,31 @@ switch (_typeofUnit) do
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};	
 	
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};			
 	
 // LOADOUT: RIFLEMAN (AT)	
 	case "rat":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};		
 	
-// LOADOUT: SURFACE TO AIR MISSILE GUNNER 
+// LOADOUT: FLAMETHROWER GUNNER 
 	case "flmg":
 	{
 		_unit addWeapon _radio2;
 	};			
 	
-// LOADOUT: ASSISTANT SURFACE TO AIR MISSILE GUNNER
+// LOADOUT: FLAMETHROWER  ASSISTANT
 	case "flmag":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};			
 	
 // LOADOUT: MEDIUM MG GUNNER	
@@ -140,7 +140,7 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER	
 	case "mmgag":
 	{
-		_unit addWeapon _radio2;		
+		//_unit addWeapon _radio2;		
 	};
 	
 // LOADOUT: HEAVY MG GUNNER
@@ -152,7 +152,7 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};		
 
 // LOADOUT: MEDIUM AT GUNNER
@@ -164,7 +164,7 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER	
 	case "matag":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};		
 	
 // LOADOUT: MORTAR GUNNER
@@ -176,7 +176,7 @@ switch (_typeofUnit) do
 // LOADOUT: MORTAR ASSISTANT GUNNER
 	case "mtrag":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};		
 	
 // LOADOUT: SNIPER
@@ -188,13 +188,13 @@ switch (_typeofUnit) do
 // LOADOUT: SPOTTER
 	case "sp":
 	{
-		_unit addWeapon _radio2;
+		//_unit addWeapon _radio2;
 	};			
 	
 // LOADOUT: GROUND VEHICLE CREW
 	case "c":
 	{
-			_unit addWeapon _radio2;
+			//_unit addWeapon _radio2;
 	};
 
 // LOADOUT: GROUND VEHICLE CREW COMMANDER
@@ -214,31 +214,31 @@ switch (_typeofUnit) do
 // LOADOUT: ENGINEER
 	case "eng":
 	{
-			_unit addWeapon _radio2;	
+			//_unit addWeapon _radio2;	
 	};	
 		
 // LOADOUT: RIFLEMAN
 	case "r":
 	{
-		_unit addWeapon _radio2;	
+		//_unit addWeapon _radio2;	
 	};
 
 // LOADOUT: CARABINEER
 	case "car":
 	{
-		_unit addWeapon _radio2;	
+		//_unit addWeapon _radio2;	
 	};
 
 // LOADOUT: SUBMACHINEGUNNER
 	case "smg":
 	{
-		_unit addWeapon _radio2;	
+		//_unit addWeapon _radio2;	
 	};
 
 // LOADOUT: GRENADIER
 	case "gren":
 	{
-		_unit addWeapon _radio2;	
+		//_unit addWeapon _radio2;	
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items

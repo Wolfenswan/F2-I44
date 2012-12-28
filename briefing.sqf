@@ -26,7 +26,7 @@ if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction 
 
 // As PMC units are used as exchange medics and engineers, they are defaulted to the UN briefing.
 // Change "bis_un" to "bis_tk_gue" when using the TK Local Platoon
-if (_unitfaction == "pmc_baf") then {_unitfaction = "bis_un"}; 
+if (_unitfaction == "pmc_BR") then {_unitfaction = "bis_un"}; 
 
 // DEBUG
 	if (f_var_debugMode == 1) then

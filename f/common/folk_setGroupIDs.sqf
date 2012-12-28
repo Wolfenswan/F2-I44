@@ -39,34 +39,34 @@ GrpUs_P2 setGroupId ["US Airforce P2 -","GroupColor0"];
 // GROUP IDs: BRITISH ARMED FORCES
 // Automatically assigns intelligible names to groups
 
-GrpBAF_CO setGroupId ["Royal Army CO -","GroupColor0"];
-GrpBAF_DC setGroupId ["Royal Army DC -","GroupColor0"];
-GrpBAF_ASL setGroupId ["Royal Army ASL -","GroupColor0"];
-GrpBAF_A1 setGroupId ["Royal Army A1 -","GroupColor0"];
-GrpBAF_A2 setGroupId ["Royal Army A2 -","GroupColor0"];
-GrpBAF_A3 setGroupId ["Royal Army A3 -","GroupColor0"];
-GrpBAF_BSL setGroupId ["Royal Army BSL -","GroupColor0"];
-GrpBAF_B1 setGroupId ["Royal Army B1 -","GroupColor0"];
-GrpBAF_B2 setGroupId ["Royal Army B2 -","GroupColor0"];
-GrpBAF_B3 setGroupId ["Royal Army B3 -","GroupColor0"];
-GrpBAF_CSL setGroupId ["Royal Army CSL -","GroupColor0"];
-GrpBAF_C1 setGroupId ["Royal Army C1 -","GroupColor0"];
-GrpBAF_C2 setGroupId ["Royal Army C2 -","GroupColor0"];
-GrpBAF_C3 setGroupId ["Royal Army C3 -","GroupColor0"];
-GrpBAF_MMG1 setGroupId ["Royal Army MMG1 -","GroupColor0"];
-GrpBAF_MAT1 setGroupId ["Royal Army MAT1 -","GroupColor0"];
-GrpBAF_ST1 setGroupId ["Royal Army ST1 -","GroupColor0"];
-GrpBAF_HMG1 setGroupId ["Royal Army HMG1 -","GroupColor0"];
-GrpBAF_MTR1 setGroupId ["Royal Army MTR1 -","GroupColor0"];
-GrpBAF_HAT1 setGroupId ["Royal Army HAT1 -","GroupColor0"];
-GrpBAF_ENG1 setGroupId ["Royal Army ENG1 -","GroupColor0"];
-GrpBAF_FLM1 setGroupId ["US Army FLM1 -","GroupColor0"];
-GrpBAF_APC1 setGroupId ["Royal Army APC1 -","GroupColor0"];
-GrpBAF_APC2 setGroupId ["Royal Army APC2 -","GroupColor0"];
-GrpBAF_APC3 setGroupId ["Royal Army APC3 -","GroupColor0"];
-GrpBAF_TNK1 setGroupId ["Royal Army TNK1 -","GroupColor0"];
-GrpBAF_P1 setGroupId ["Royal Airforce P1 -","GroupColor0"];
-GrpBAF_P2 setGroupId ["Royal Airforce P2 -","GroupColor0"];
+GrpBR_CO setGroupId ["Royal Army CO -","GroupColor0"];
+GrpBR_DC setGroupId ["Royal Army DC -","GroupColor0"];
+GrpBR_ASL setGroupId ["Royal Army ASL -","GroupColor0"];
+GrpBR_A1 setGroupId ["Royal Army A1 -","GroupColor0"];
+GrpBR_A2 setGroupId ["Royal Army A2 -","GroupColor0"];
+GrpBR_A3 setGroupId ["Royal Army A3 -","GroupColor0"];
+GrpBR_BSL setGroupId ["Royal Army BSL -","GroupColor0"];
+GrpBR_B1 setGroupId ["Royal Army B1 -","GroupColor0"];
+GrpBR_B2 setGroupId ["Royal Army B2 -","GroupColor0"];
+GrpBR_B3 setGroupId ["Royal Army B3 -","GroupColor0"];
+GrpBR_CSL setGroupId ["Royal Army CSL -","GroupColor0"];
+GrpBR_C1 setGroupId ["Royal Army C1 -","GroupColor0"];
+GrpBR_C2 setGroupId ["Royal Army C2 -","GroupColor0"];
+GrpBR_C3 setGroupId ["Royal Army C3 -","GroupColor0"];
+GrpBR_MMG1 setGroupId ["Royal Army MMG1 -","GroupColor0"];
+GrpBR_MAT1 setGroupId ["Royal Army MAT1 -","GroupColor0"];
+GrpBR_ST1 setGroupId ["Royal Army ST1 -","GroupColor0"];
+GrpBR_HMG1 setGroupId ["Royal Army HMG1 -","GroupColor0"];
+GrpBR_MTR1 setGroupId ["Royal Army MTR1 -","GroupColor0"];
+GrpBR_HAT1 setGroupId ["Royal Army HAT1 -","GroupColor0"];
+GrpBR_ENG1 setGroupId ["Royal Army ENG1 -","GroupColor0"];
+GrpBR_FLM1 setGroupId ["US Army FLM1 -","GroupColor0"];
+GrpBR_APC1 setGroupId ["Royal Army APC1 -","GroupColor0"];
+GrpBR_APC2 setGroupId ["Royal Army APC2 -","GroupColor0"];
+GrpBR_APC3 setGroupId ["Royal Army APC3 -","GroupColor0"];
+GrpBR_TNK1 setGroupId ["Royal Army TNK1 -","GroupColor0"];
+GrpBR_P1 setGroupId ["Royal Airforce P1 -","GroupColor0"];
+GrpBR_P2 setGroupId ["Royal Airforce P2 -","GroupColor0"];
 
 // ====================================================================================
 
