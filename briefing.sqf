@@ -118,7 +118,7 @@ if (_unitfaction == "I44_G_WL") exitwith {
 
 if (_unitfaction == "I44_R_F") exitwith {
 
-#include "f\common\f_briefing_res.sqf"
+#include "f\common\f_briefing_fr.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then

@@ -107,7 +107,7 @@ if (_faction == "i44_g_wl") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "i44_r_f") then {
-#include "folk_assignGear_res.sqf"
+#include "folk_assignGear_fr.sqf"
 };
 
 // ====================================================================================
