@@ -149,8 +149,8 @@ switch (_unitfaction) do
 	
 // ====================================================================================
 
-// MARKERS: Wehrmacht
-// Markers seen by players in TAKISTANI ARMY slots.
+// MARKERS: WEHRMACHT
+// Markers seen by players in GERMAN WEHRMACHT slots.
 
 	case "i44_g_wh":
 	{
@@ -191,8 +191,8 @@ switch (_unitfaction) do
 
 // ====================================================================================
 
-// MARKERS: Waffen SS
-// Markers seen by players in TAKISTANI MILITIA slots.
+// MARKERS: WAFFEN SS
+// Markers seen by players in WAFFEN SS slots.
 
 	case "i44_g_ss":
 	{
@@ -232,8 +232,8 @@ switch (_unitfaction) do
 	};
 // ====================================================================================
 
-// MARKERS: Fallschirmjäger
-// Markers seen by players in TAKISTANI MILITIA slots.
+// MARKERS: LUFTWAFFE
+// Markers seen by players in GERMAN LUFTWAFFE and FALLSCHIRMJAEGER slots.
 
 	case "i44_g_wl":
 	{
@@ -275,8 +275,8 @@ switch (_unitfaction) do
        
 // ====================================================================================
 
-// MARKERS: TAKISTANI LOCALS (INDEPENDENT)
-// Markers seen by players in TAKISTANI LOCALS (INDEPENDENT) slots.
+// MARKERS: FRENCH RESISTANCE
+// Markers seen by players in FRENCH RESISTANCE slots.
 
 	case "i44_r_f":
 	{
