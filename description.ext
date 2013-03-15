@@ -28,6 +28,9 @@ respawndelay = 3;
 
 // ============================================================================================
 
+// F2 I44 - Start of Params code blocks.
+// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+
 class Params
 {
 
@@ -146,6 +149,9 @@ class Params
 //	};
 
 // ============================================================================================
+
+// F2 - End of Params code blocks.
+// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
 };
 

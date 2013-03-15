@@ -1,6 +1,6 @@
 # F2 I44 README #
 
-* Version: 1-0-0 based on F2 2-7-0
+* Version: 1-0-0 based on F2 2-7-1
 * Codebase: https://github.com/Wolfenswan/F2-I44
 * Developer: Please see credits section below.
 * Publishers: Wolfenswan (wolfenswanarps@gmail.com)
@@ -29,12 +29,13 @@
 
 Version | Date | Notes
 
-* 1-0-0     | XX DEC 2012 | First official release - based on F2 CO 2-7-0
+* 1-0-0     | XX MAR 2013 | First official release - based on F2 CO 2-7-1
 
 ### F2 Version History ###
 
 Version | Date | Notes
 
+* 2-7-1     | 16 FEB 2013 | Patch release - Various improvements (see change history).
 * 2-7-0     | 15 DEC 2012 | Patch release - Various improvements (see change history).
 * 2-6-1     | 02 JUL 2012 | Patch release - Various improvements (see change history).
 * 2-6-0     | 07 JUN 2012 | Patch release - Various improvements (see change history).
