@@ -41,11 +41,12 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-_rifle = "I44_K98k"; _riflemag = "I44_5rd_792x57_Mix_K98";																							// Standard Riflemen (Spotter, HMG Assistant Gunner, MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, HAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
+_rifle = "I44_K98k"; _riflemag = "I44_5rd_792x57_Mix_K98";																							    // Standard bolt-action rifle
 
-_carbine = "I44_M1Garand"; _carbinemag = "I44_8rd_762x63_Mix_M1Garand";  																					// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
+_carbine = "I44_M1Garand"; _carbinemag = "I44_8rd_762x63_Mix_M1Garand";  																				// Standard semi-automatic carbine / rifle
 
-_smg = "I44_MP40"; _smgmag = "I44_32rd_9x19_Ball_MP40";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
+_smg = "I44_MP40"; _smgmag = "I44_32rd_9x19_Ball_MP40";																									// Standard Submachine Gun
+_smg2 = "I44_M1A1Thompson"; _smg2mag = "I44_30rd_1143x23_Mix_M1A1Thompson";																				// Alternative Submachine Gun
 
 _glrifle = "I44_K98k_GGrGer"; _glriflemag = "30Rnd_545x39_AK"; _glmag1 = "I44_RifleGrenade_GSprgr";	_glmag2 = "I44_RifleGrenade_GGPzgr40";_glflarewhite="I44_RifleGrenade_GFlgr";		// Rifle with GL and HE grenades
 
@@ -66,17 +67,17 @@ _AR = "I44_M1918A2"; _ARmag = "I44_20rd_762x63_Mix_M1918";																						
 
 _MMG = "I44_M1919A4"; _MMGmag = "I44_50rd_762x63_Mix_M1919";																					// Medium MG
 
-_HMG = "I44_Bag_M1919A4";																										// Heavy MG (note: HMG is an assembled weapon, gunner carries weapon)
-_HMGmount = "I44_Bag_M1919TripodM2";																													// Assistant Heavy MG (note: HMG is an assembled weapon, assistant carries bipod/tripd)
+_HMG = "I44_Bag_Vickers";																								// Heavy MG (note: HMG is an assembled weapon, gunner carries weapon)
+_HMGmount = "I44_Bag_TripodV";																														// Assistant Heavy MG (note: HMG is an assembled weapon, assistant carries bipod/tripd)
 
 _RAT = "I44_PzFaust60"; _RATmag = "I44_Rocket_149mm_PzF_60";																										// Rifleman AT
 
-_MAT = "I44_RPzB54"; _MATmag1 = "I44_Rocket_88mm_RPzBGr4322_RPzB54"; _MATmag2 = "I44_Rocket_88mm_RPzBGr4322_RPzB54";																			// Medium AT
+_MAT = "I44_RPzB54"; _MATmag1 = "I44_Rocket_88mm_RPzBGr4322_RPzB54";																			// Medium AT
 
 _MTR = "I44_Bag_GrW34";																												// Mortar Gunner (note: Mortar is an assembled weapon, gunner carries weapon)
 _MTRmount = "I44_Bag_GrW34BP";																																// Mortar Assistant Gunner (note: Mortar is an assembled weapon, assistant carries bipod/tripd)
 
-_FLM = "I44_M2_flameThrower"; _FLMmag = "I44_m2_flamethrower_mag";	_FLMback = "I44_Backpack_M2flamethrower";																										// Rifleman AA (anti-air)
+_FLM = "I44_M2_flameThrower"; _FLMmag = "I44_M2_flamethrower_mag";	_FLMback = "I44_Backpack_M2flamethrower";																										// Rifleman AA (anti-air)
 
 _SNrifle = "I44_K98kZf42"; _SNriflemag = "I44_5rd_792x57_Mix_K98";																					// Sniper
 
@@ -322,8 +323,7 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];
 		_unit addweapon _rifle;
-		{_unit addmagazine _MATmag1} foreach [1,2];
-		{_unit addmagazine _MATmag2} foreach [1];
+		{_unit addmagazine _MATmag1} foreach [1,2,3];
 		_unit addweapon _MAT;			
 	};	
 	
@@ -341,15 +341,12 @@ switch (_typeofUnit) do
 			{_unit addmagazine _smokegrenade;} foreach [1];
 			_unit addBackpack _baglarge;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 4];
 		} else {
-			{_unit addmagazine _MATmag1} foreach [1];
-			{_unit addmagazine _MATmag2} foreach [1];
+			{_unit addmagazine _MATmag1} foreach [1,2];
 		};				
 			
-	};	
+	};
 		
 // LOADOUT: MORTAR GUNNER
 	case "mtrg":

@@ -44,19 +44,16 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-_rifle = "I44_M1Garand"; _riflemag = "I44_8rd_762x63_Mix_M1Garand";																						// Standard Riflemen (Spotter, HMG Assistant Gunner, MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, HAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
+_rifle = "I44_M1Garand"; _riflemag = "I44_8rd_762x63_Mix_M1Garand";																						// Standard bolt-action rifle
 
-_carbine = "I44_M1Carbine"; _carbinemag = "I44_15rd_762x33_Mix_M1Carbine"; 																					// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
+_carbine = "I44_M1Carbine"; _carbinemag = "I44_15rd_762x33_Mix_M1Carbine"; 																				// Standard semi-automatic carbine
 
-_smg = "I44_M1A1Thompson"; _smgmag = "I44_30rd_1143x23_Mix_M1A1Thompson";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
+_smg = "I44_M1A1Thompson"; _smgmag = "I44_30rd_1143x23_Mix_M1A1Thompson";																				// Standard Submachine Gun
 
-//_glrifle = "I44_M1903A3_M1"; _glriflemag = "I44_5rd_762x63_Mix_M1903"; 																				// Rifle with GL and HE grenades
-//_glmag1 = "I44_RifleGrenade_M17_M1903";_glmag2 = "I44_RifleGrenade_M9A1_M1903";_glmag3 = "I44_RifleGrenade_M1Mk2_M1903";_glflarewhite="I44_RifleGrenade_SignalM17A1_M1903";	
-
-_glrifle = "I44_M1Garand_M7"; _glriflemag = "I44_8rd_762x63_Mix_M1Garand"; 																		// Semi-automatic variant
+_glrifle = "I44_M1Garand_M7"; _glriflemag = "I44_8rd_762x63_Mix_M1Garand"; 																				// Semi-automatic variant
 _glmag1 = "I44_RifleGrenade_M17";_glmag2 = "I44_RifleGrenade_M9A1";_glmag3 = "I44_RifleGrenade_M1Mk2";_glflarewhite="I44_RifleGrenade_SignalM17A1";	
 
-_pistol = "I44_M1911A1"; _pistolmag = "I44_7rd_1143x23_Ball_M1911";																								// Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
+_pistol = "I44_M1911A1"; _pistolmag = "I44_7rd_1143x23_Ball_M1911";																						// Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
 
 _grenade = "I44_HandGrenade_Mk2"; _smokegrenade = "I44_SmokeGrenade_ANM8";																				// Grenades
 
@@ -69,29 +66,30 @@ _bagmedic = "I44_Bag_ABMedic";
 
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
-_AR = "I44_M1918A2"; _ARmag = "I44_20rd_762x63_Mix_M1918";																							// Automatic Rifleman
+_AR = "I44_M1918A2"; _ARmag = "I44_20rd_762x63_Mix_M1918";																		// Automatic Rifleman
 
-_MMG = "I44_M1919A4"; _MMGmag = "I44_50rd_762x63_Mix_M1919";																					// Medium MG
+_MMG = "I44_M1919A4"; _MMGmag = "I44_50rd_762x63_Mix_M1919";																		// Medium MG
 
 _HMG = "I44_Bag_M1919A4";																										// Heavy MG (note: HMG is an assembled weapon, gunner carries weapon)
-_HMGmount = "I44_Bag_M1919TripodM2";																													// Assistant Heavy MG (note: HMG is an assembled weapon, assistant carries bipod/tripd)
+_HMGmount = "I44_Bag_M1919TripodM2";																								// Assistant Heavy MG (note: HMG is an assembled weapon, assistant carries bipod/tripd)
 
-_RAT = "I44_M1A1Bazooka"; _RATmag = "I44_Rocket_60mm_M6A1_M1A1Bazooka";																											// Rifleman AT
+_RAT = "I44_M1A1Bazooka"; _RATmag = "I44_Rocket_60mm_M6A1_M1A1Bazooka";																		// Rifleman AT
 
-_MAT = "I44_M1A1Bazooka"; _MATmag1 = "I44_Rocket_60mm_M6A1_M1A1Bazooka"; _MATmag2 = "I44_Rocket_60mm_M6A1_M1A1Bazooka";																			// Medium AT
+_MAT = "I44_M1A1Bazooka"; _MATmag1 = "I44_Rocket_60mm_M6A1_M1A1Bazooka";														// Medium AT
 
 _MTR = "I44_Bag_M2Mortar";																													// Mortar Gunner (note: Mortar is an assembled weapon, gunner carries weapon)
-_MTRmount = "I44_Bag_M2MortarBP";																															// Mortar Assistant Gunner (note: Mortar is an assembled weapon, assistant carries bipod/tripd)
+_MTRmount = "I44_Bag_M2MortarBP";																										// Mortar Assistant Gunner (note: Mortar is an assembled weapon, assistant carries bipod/tripd)
 
-_FLM = "I44_M2_flameThrower"; _FLMmag = "I44_m2_flamethrower_mag";	_FLMback = "I44_Backpack_M2flamethrower";																										// Rifleman AA (anti-air)
+_FLM = "I44_M2_flameThrower"; _FLMmag = "I44_m2_flamethrower_mag";	_FLMback = "I44_Backpack_M2flamethrower";						// Flamethrower Gunner
 
-_SNrifle = "I44_M1903A4"; _SNriflemag = "I44_5rd_762x63_Mix_M1903";																					// Sniper
+_SNrifle = "I44_M1903A4"; _SNriflemag = "I44_5rd_762x63_Mix_M1903";																	// Sniper / Marksman
 
-_mine = "I44_Mine_AT_M1"; _satchel = "I44_Item_M2DemoCharge";_satchel2 = "I44_Item_M37DemoKit";
-_bayonet = "I44_ItemBayonet";
-_shovel = "I44_ItemShovel";
+_mine = "I44_Mine_AT_M1"; _satchel = "I44_Item_M2DemoCharge";_satchel2 = "I44_Item_M37DemoKit";							// Engineer equipment
+
+_bayonet = "I44_ItemBayonet";																									// Misc. items		
+_shovel = "I44_ItemShovel";																										
 _medpackl = "I44_MedpackLarge";	
-_medpacks = "I44_MedpackSmall";																											
+_medpacks = "I44_MedpackSmall";																									
 
 // ====================================================================================
 
@@ -337,8 +335,7 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];
 		_unit addweapon _rifle;
-		{_unit addmagazine _MATmag1} foreach [1,2];
-		{_unit addmagazine _MATmag2} foreach [1];
+		{_unit addmagazine _MATmag1} foreach [1,2,3];
 		_unit addweapon _MAT;			
 	};	
 	
@@ -356,12 +353,9 @@ switch (_typeofUnit) do
 			{_unit addmagazine _smokegrenade;} foreach [1];
 			_unit addBackpack _baglarge;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag2, 2];
-			(unitBackpack _unit) addMagazineCargoGlobal [_riflemag, 2];
+			(unitBackpack _unit) addMagazineCargoGlobal [_MATmag1, 4];
 		} else {
-			{_unit addmagazine _MATmag1} foreach [1];
-			{_unit addmagazine _MATmag2} foreach [1];
+			{_unit addmagazine _MATmag1} foreach [1,2];
 		};				
 			
 	};	
