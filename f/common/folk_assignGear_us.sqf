@@ -49,6 +49,7 @@ _rifle = "I44_M1Garand"; _riflemag = "I44_8rd_762x63_Mix_M1Garand";													
 _carbine = "I44_M1Carbine"; _carbinemag = "I44_15rd_762x33_Mix_M1Carbine"; 																				// Standard semi-automatic carbine
 
 _smg = "I44_M1A1Thompson"; _smgmag = "I44_30rd_1143x23_Mix_M1A1Thompson";																				// Standard Submachine Gun
+_smg2 = "I44_M3Greasegun"; _smg2mag = "I44_30rd_1143x23_Mix_M3Greasegun";																				// Alternative Submachine Gun
 
 _glrifle = "I44_M1Garand_M7"; _glriflemag = "I44_8rd_762x63_Mix_M1Garand"; 																				// Semi-automatic variant
 _glmag1 = "I44_RifleGrenade_M17";_glmag2 = "I44_RifleGrenade_M9A1";_glmag3 = "I44_RifleGrenade_M1Mk2";_glflarewhite="I44_RifleGrenade_SignalM17A1";	
