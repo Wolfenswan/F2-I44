@@ -46,7 +46,7 @@ _rifle = "I44_K98k"; _riflemag = "I44_5rd_792x57_Mix_K98";																						
 _carbine = "I44_M1Garand"; _carbinemag = "I44_8rd_762x63_Mix_M1Garand";  																				// Standard semi-automatic carbine / rifle
 
 _smg = "I44_MP40"; _smgmag = "I44_32rd_9x19_Ball_MP40";																									// Standard Submachine Gun
-_smg2 = "I44_M1A1Thompson"; _smg2mag = "I44_30rd_1143x23_Mix_M1A1Thompson";																				// Alternative Submachine Gun
+_smg2 = "I44_StenMk5"; _smg2mag = "I44_32rd_9x19_Ball_Sten";																				// Alternative Submachine Gun
 
 _glrifle = "I44_K98k_GGrGer"; _glriflemag = "30Rnd_545x39_AK"; _glmag1 = "I44_RifleGrenade_GSprgr";	_glmag2 = "I44_RifleGrenade_GGPzgr40";_glflarewhite="I44_RifleGrenade_GFlgr";		// Rifle with GL and HE grenades
 
@@ -176,6 +176,25 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5,6,7,8];	
 		_unit addweapon _carbine;									
+		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
+		_unit addweapon _pistol;		
+		{_unit addmagazine _grenade} foreach [1,2];
+		{_unit addmagazine _smokegrenade;} foreach [1,2];
+		_unit addWeapon "Binocular";
+		if (_useBackpacks==1) then {
+			_unit addBackpack _bagmedium;
+			clearMagazineCargoGlobal (unitBackpack _unit);
+			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
+			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
+			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
+		};
+	};
+	
+// LOADOUT: FIRE TEAM LEADER SMG LOADOUT
+	case "ftl2":
+	{
+		{_unit addmagazine _smgmag} foreach [1,2,3,4,5,6,7,8];	
+		_unit addweapon _smg;									
 		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
 		_unit addweapon _pistol;		
 		{_unit addmagazine _grenade} foreach [1,2];
@@ -478,6 +497,22 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _smgmag} foreach [1,2,3,4,5,6,7,8];
 		_unit addweapon _smg;
+		{_unit addmagazine _grenade} foreach [1,2,3];
+		{_unit addmagazine _smokegrenade;} foreach [1];
+		if (_useBackpacks==1) then {
+			_unit addBackpack _bagmedium;
+			clearMagazineCargoGlobal (unitBackpack _unit);
+			(unitBackpack _unit) addMagazineCargoGlobal [_smgmag, 6];
+			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 3];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
+		};
+	};
+	
+// LOADOUT: SUBMACHINEGUNNER ALTERNATIVE LOADOUT
+	case "smg2":
+	{
+		{_unit addmagazine _smg2mag} foreach [1,2,3,4,5,6,7,8];
+		_unit addweapon _smg2;
 		{_unit addmagazine _grenade} foreach [1,2,3];
 		{_unit addmagazine _smokegrenade;} foreach [1];
 		if (_useBackpacks==1) then {

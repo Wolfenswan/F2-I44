@@ -98,8 +98,13 @@ switch (_typeofUnit) do
 	case "ftl":
 	{
 		_unit addWeapon _radio2;
+	};
+	
+// LOADOUT: FIRE TEAM LEADER
+	case "ftl2":
+	{
+		_unit addWeapon _radio2;
 	};	
-
 
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
@@ -234,6 +239,12 @@ switch (_typeofUnit) do
 	{
 		//_unit addWeapon _radio2;	
 	};
+	
+// LOADOUT: SUBMACHINEGUNNER
+	case "smg2":
+	{
+		//_unit addWeapon _radio2;	
+	};
 
 // LOADOUT: GRENADIER
 	case "gren":
@@ -244,8 +255,6 @@ switch (_typeofUnit) do
 // CARGO: CAR - room for 10 weapons and 50 cargo items
 	case "v_car":
 	{
-		clearWeaponCargoGlobal _unit;
-		clearMagazineCargoGlobal _unit;
 		_unit addWeaponCargoGlobal [_radio2, 1];
 		_unit addWeaponCargoGlobal [_radio1, 1];
 	};	
@@ -253,8 +262,6 @@ switch (_typeofUnit) do
 // CARGO: TRUCK - room for 50 weapons and 200 cargo items
 	case "v_tr":
 	{
-		clearWeaponCargoGlobal _unit;
-		clearMagazineCargoGlobal _unit;
 		_unit addWeaponCargoGlobal [_radio2, 4];
 		_unit addWeaponCargoGlobal [_radio1, 4];
 
@@ -263,8 +270,6 @@ switch (_typeofUnit) do
 // CARGO: APC - room for 10 weapons and 100 cargo items
 	case "v_apc":
 	{
-		clearWeaponCargoGlobal _unit;
-		clearMagazineCargoGlobal _unit;
 		_unit addWeaponCargoGlobal [_radio2, 2];
 		_unit addWeaponCargoGlobal [_radio1, 2];
 
