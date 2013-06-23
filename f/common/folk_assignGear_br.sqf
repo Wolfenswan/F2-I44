@@ -132,8 +132,8 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8];	
-		_unit addweapon _rifle;										
+		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5,6,7,8];	
+		_unit addweapon _carbine;										
 		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
 		_unit addweapon _pistol;		
 		{_unit addmagazine _grenade} foreach [1,2];
@@ -142,7 +142,7 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_smg2mag, 5];
+			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
 		};
@@ -151,8 +151,8 @@ switch (_typeofUnit) do
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
 	case "dc":
 	{
-		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8];	
-		_unit addweapon _rifle;									
+		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5,6,7,8];	
+		_unit addweapon _carbine;									
 		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
 		_unit addweapon _pistol;		
 		{_unit addmagazine _grenade} foreach [1,2];
@@ -161,7 +161,7 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_smg2mag, 5];
+			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
 		};
@@ -182,8 +182,8 @@ switch (_typeofUnit) do
 // LOADOUT: FIRE TEAM LEADER
 	case "ftl":
 	{
-		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6,7,8];	
-		_unit addweapon _rifle;									
+		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5,6,7,8];	
+		_unit addweapon _carbine;									
 		{_unit addmagazine _pistolmag} foreach [1,2,3,4];
 		_unit addweapon _pistol;		
 		{_unit addmagazine _grenade} foreach [1,2];
@@ -211,7 +211,7 @@ switch (_typeofUnit) do
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
 			clearMagazineCargoGlobal (unitBackpack _unit);
-			(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 5];
+			(unitBackpack _unit) addMagazineCargoGlobal [_smg2mag, 5];
 			(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];	
 			(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
 		};

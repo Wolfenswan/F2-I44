@@ -2782,7 +2782,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.5;
 					text="UnitSS_DC";
-					init="GrpSS_DC = group this; nul = [""co"",this] call f_fnc_assignGear;";
+					init="GrpSS_DC = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Waffen SS Deputy Commander";
 				};
 				class Item1
@@ -3864,7 +3864,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={2925.5452,359.78775,329.51263};
+					position[]={2924.75,359.68936,329.51263};
 					id=255;
 					side="EAST";
 					vehicle="I44_Man_G_SS_K98k";
@@ -4071,7 +4071,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.5;
 					text="UnitWH_DC";
-					init="GrpWH_DC = group this; nul = [""co"",this] call f_fnc_assignGear;";
+					init="GrpWH_DC = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Heer Deputy Commander";
 				};
 				class Item1
@@ -4106,7 +4106,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitWH_ASL_SL";
-					init="GrpWH_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpWH_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Heer Alpha Squad Leader";
 				};
 				class Item1
@@ -4318,7 +4318,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitWH_BSL_SL";
-					init="GrpWH_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpWH_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Heer Bravo Squad Leader";
 				};
 				class Item1
@@ -4530,7 +4530,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitWH_CSL_SL";
-					init="GrpWH_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpWH_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Heer Charlie Squad Leader";
 				};
 				class Item1
@@ -5360,7 +5360,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.5;
 					text="UnitFJ_DC";
-					init="GrpFJ_DC = group this; nul = [""co"",this] call f_fnc_assignGear;";
+					init="GrpFJ_DC = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Deputy Commander";
 				};
 				class Item1
@@ -5395,7 +5395,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitFJ_ASL_SL";
-					init="GrpFJ_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpFJ_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Alpha Squad Leader";
 				};
 				class Item1
@@ -5607,7 +5607,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitFJ_BSL_SL";
-					init="GrpFJ_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpFJ_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Bravo Squad Leader";
 				};
 				class Item1
@@ -5819,7 +5819,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.5;
 					text="UnitFJ_CSL_SL";
-					init="GrpFJ_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpFJ_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
 					description="Fallschirmjaeger Charlie Squad Leader";
 				};
 				class Item1
