@@ -1,6 +1,6 @@
 # F2 I44 README #
 
-* Version: 1-0-0 based on F2 2-7-1
+* Version: 1-0-0 based on F2 2-7-3
 * Codebase: https://github.com/Wolfenswan/F2-I44
 * Developer: Please see credits section below.
 * Publishers: Wolfenswan (wolfenswanarps@gmail.com)
